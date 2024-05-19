@@ -16,7 +16,6 @@ export const CarouselWrapper = styled.div`
   transition: transform 0.5s ease;
   width: 100%;
   flex-wrap: wrap;
-  flex-shrink: ;
 `;
 
 export const CarouselItem = styled.div`
