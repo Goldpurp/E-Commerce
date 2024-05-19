@@ -33,26 +33,6 @@ export default function Section() {
             <Image src={Img4} alt="image" />
           </CarouselBox>
         </CarouselItem>
-        <CarouselItem>
-          <CarouselBox>
-            <Image src={Img1} alt="image" />
-          </CarouselBox>
-        </CarouselItem>
-        <CarouselItem>
-          <CarouselBox>
-            <Image src={Img2} alt="image" />
-          </CarouselBox>
-        </CarouselItem>
-        <CarouselItem>
-          <CarouselBox>
-            <Image src={Img3} alt="image" />
-          </CarouselBox>
-        </CarouselItem>
-        <CarouselItem>
-          <CarouselBox>
-            <Image src={Img4} alt="image" />
-          </CarouselBox>
-        </CarouselItem>
       </CarouselWrapper>
     </CarouselContainer>
   );
