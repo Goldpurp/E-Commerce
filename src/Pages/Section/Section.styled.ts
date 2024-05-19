@@ -19,26 +19,22 @@ export const CarouselWrapper = styled.div`
 `;
 
 export const CarouselItem = styled.div`
-  // Four items in a row */
   flex: 1 1 25%;
   box-sizing: border-box;
   padding: 10px;
   transition: transform 0.5s ease;
 
   @media (max-width: 1200px) {
-    // Three items in a row
     padding: 7px;
     flex: 1 1 33.33%;
   }
 
   @media (max-width: 768px) {
-    // Two items in a row
     padding: 5px;
     flex: 1 1 33.33%;
   }
 
   @media (max-width: 480px) {
-    // One item in a row
     padding: 5px;
     flex: 1 1 50%;
   }
