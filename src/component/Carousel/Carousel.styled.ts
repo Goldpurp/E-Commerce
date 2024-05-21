@@ -72,8 +72,8 @@ export const ProductTitle = styled.p`
   white-space: nowrap;
   color: #222831;
   width: 100px;
-  font-family: "Oswald", sans-serif;
-  font-size: 13px;
+  /* font-family: "Oswald", sans-serif; */
+  font-size: 15px;
   margin-bottom: 3px;
 
   @media screen and (min-width: 376px) {
@@ -106,13 +106,14 @@ export const ProductTitle = styled.p`
   }
 `;
 
+
 export const ProductDetails = styled.p`
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #222831;
   width: 100px;
-  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Josefin Sans", sans-serif; */
   font-optical-sizing: auto;
   font-size: 13px;
 
@@ -146,45 +147,63 @@ export const ProductDetails = styled.p`
   }
 `;
 
-export const Productprice = styled.h3`
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  color: #222831;
-  width: 100px;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 600;
-  font-size: 15px;
-  font-style: normal;
-  margin-top: 7px;
 
-  @media screen and (min-width: 376px) {
-    font-size: 18px;
-    width: 140px;
+// export const Productprice = styled.h3`
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+//   color: #222831;
+//   width: 100px;
+//   font-family: "Josefin Sans", sans-serif;
+//   font-weight: 600;
+//   font-size: 15px;
+//   font-style: normal;
+//   margin-top: 7px;
+
+//   @media screen and (min-width: 376px) {
+//     font-size: 18px;
+//     width: 140px;
+//   }
+
+//   @media screen and (min-width: 500px) {
+//     width: 150px;
+//     font-size: 20px;
+//   }
+
+//   @media screen and (min-width: 601px) {
+//     width: 180px;
+//     font-size: 22px;
+//   }
+
+//   @media screen and (min-width: 769px) {
+//     width: 200px;
+//     font-size: 25px;
+//     margin-top: 10px;
+//   }
+
+//   @media screen and (min-width: 1148px) {
+//     width: 240px;
+//     font-size: 30px;
+//   }
+
+//   &::-webkit-scrollbar {
+//     display: none;
+//   }
+// `;
+
+export const Productprice = styled.h5`
+  font-size: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+  color: #386648;
+  margin: 5px 0;
+  letter-spacing: 0.70px;
+
+  @media (min-width: 768px) {
+    font-size: 19px;
   }
 
-  @media screen and (min-width: 500px) {
-    width: 150px;
-    font-size: 20px;
-  }
-
-  @media screen and (min-width: 601px) {
-    width: 180px;
-    font-size: 22px;
-  }
-
-  @media screen and (min-width: 769px) {
-    width: 200px;
-    font-size: 25px;
-    margin-top: 10px;
-  }
-
-  @media screen and (min-width: 1148px) {
-    width: 240px;
-    font-size: 30px;
-  }
-
-  &::-webkit-scrollbar {
-    display: none;
+  @media (min-width: 1024px) {
+    font-size: 21px;
   }
 `;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { GoDotFill } from "react-icons/go";
+
 export const LineContainer = styled.div`
   margin: 20px;
   display: flex;
@@ -21,6 +22,19 @@ export const HrLines = styled.hr`
   height: 3px;
   width: 150px;
   background-color: black;
+
+  @media screen and (min-width: 500px) {
+   width: 200px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 265px;
+  }
+
+
+  @media screen and (min-width: 1024px) {
+    width: 300px;
+  }
 `;
 
 export const Dot = styled(GoDotFill)`
@@ -37,6 +51,19 @@ export const H1 = styled.h1`
   margin: 3px 0 5px 0;
   text-shadow: 1px 1px 10px black;
   font-family: "Concert One", sans-serif;
+
+  @media screen and (min-width: 500px) {
+    font-size: 35px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 45px;
+  }
+
+
+  @media screen and (min-width: 1024px) {
+    font-size: 50px;
+  }
 `;
 
 export const Span = styled.span`

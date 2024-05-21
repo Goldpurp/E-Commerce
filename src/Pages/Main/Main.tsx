@@ -1,5 +1,6 @@
 import Carousel from "../../component/Carousel/Carousel";
 import Badge from "../Badge/Badge";
+import Collections from "../Collections/Collections";
 import Header from "../Header/Header";
 import Hero from "../Hero/Hero";
 import Section from "../Section/Section";
@@ -59,6 +60,9 @@ export default function Main() {
       </TrendsBrace>
 
       <Section/>
+
+      <Collections/>
+      
     </>
   );
 }
