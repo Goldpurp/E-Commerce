@@ -17,6 +17,7 @@ import {
   MobileMenuLines,
   MobileMenuLines2,
   MobileMenuLoginStyle,
+  MobileHeaderNavContainer,
 } from "./Header.styled";
 import Logo from "../../../public/Images/logoIcon.png";
 import ImgIcon from "../../../public/Images/newIcon2.png";
@@ -35,6 +36,7 @@ export default function Header() {
   return (
     <>
       <Container>
+
           <Hamburger onClick={toggleMenu}>
             {IsOpen ? <MenuClose /> : <MenuOpen />}
           </Hamburger>
@@ -69,7 +71,36 @@ export default function Header() {
           </Tabs>
         </HeaderTabs>
 
+        <LoginFrame>
+          <Cart />
+
+          <Icon src={ImgIcon} alt="Icon" />
+        </LoginFrame>
+
+
         <MobileMenu active={IsOpen}>
+
+          <MobileHeaderNavContainer >
+
+
+        <Hamburger onClick={toggleMenu}>
+            {IsOpen ? <MenuClose /> : <MenuOpen />}
+          </Hamburger>
+
+        <NavLogo>
+          <LogoIcon src={Logo} alt="logo" />
+          <LogoText>
+            GoldPurp's <LogoText2>Vogue</LogoText2>
+          </LogoText>
+        </NavLogo>
+
+        <LoginFrame>
+          <Cart />
+        </LoginFrame>
+
+          </MobileHeaderNavContainer>
+
+
           <MobileMenuLines>
             <Tabs>All Products</Tabs>
             <Tabs>New Arrivals</Tabs>
@@ -101,11 +132,6 @@ export default function Header() {
           </MobileMenuLoginStyle>
         </MobileMenu>
 
-        <LoginFrame>
-          <Cart />
-
-          <Icon src={ImgIcon} alt="Icon" />
-        </LoginFrame>
       </Container>
     </>
   );

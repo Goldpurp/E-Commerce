@@ -9,9 +9,20 @@ export const Container = styled.div`
   display: flex;
   padding: 0 20px;
   text-align: center;
-  position: relative;
+  position: relative;;
   align-items: center;
   background-color: #cbcbcb;
+  justify-content: space-between;
+  font-family: "Lora", serif;
+`;
+
+export const MobileHeaderNavContainer = styled.div`
+  width: 100%;
+  height: 91px;
+  display: flex;
+  text-align: center;
+  position: relative;
+  align-items: center;
   justify-content: space-between;
   font-family: "Lora", serif;
 `;
@@ -117,14 +128,13 @@ export const HeaderTabs = styled.div`
 export const MobileMenu = styled.div<{ active: boolean }>`
   @media only screen and (max-width: 600px) {
     left: 0;
-    top: 91px;
+    top: 0;
     z-index: 2;
-    width: 70vw;
-    padding: 30px;
+    width: 98vw;
+    padding: 0 30px;
     height: 100vh;
     display: flex;
     position: fixed;
-    position: absolute;
     flex-direction: column;
     align-items: flex-start;
     background-color: #ffff;
