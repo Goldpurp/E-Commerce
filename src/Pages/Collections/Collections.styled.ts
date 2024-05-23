@@ -28,27 +28,32 @@ export const Brace = styled.div`
 export const H1 = styled.h1`
   color: #ffff;
   font-size: 40px;
+  text-shadow: 1px 1px 5px black;
 `;
 
 export const Span = styled.span`
   color: #ffff;
   font-size: 20px;
+  text-shadow: 1px 1px 5px black;
 `;
 
 export const Button = styled.button`
   color: #ffff;
   font-size: 25px;
   cursor: pointer;
+  margin-top: 10px;
   background: none;
   padding: 2px 8px;
   align-self: center;
   width: fit-content;
   border-radius: 7px;
   border: 1px solid #ffff;
+  text-shadow: 1px 1px 5px black;
 
 &:hover{
   background: #dad7cd;
   color: #343a40;
   border: 1px solid #343a40;
+  text-shadow: 1px 1px 5px black;
 }
 `;
