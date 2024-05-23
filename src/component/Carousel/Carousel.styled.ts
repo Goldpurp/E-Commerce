@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-wrap: nowrap;
-  overflow-x: auto;
   gap: 10px;
-  margin-bottom: 30px;
+  display: flex;
   margin-left: 5px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: start;
 
   @media screen and (min-width: 769px) {
     gap: 12px;
@@ -23,13 +23,13 @@ export const Container = styled.div`
 `;
 
 export const CarouselCards = styled.div`
-  display: flex;
-  background-color: #cec9cc;
   width: 120px;
   height: 180px;
+  display: flex;
   border-radius: 5px;
-  box-shadow: 2px 2px 5px 1px gray;
   margin-bottom: 10px;
+  background-color: #cec9cc;
+  box-shadow: 2px 2px 5px 1px gray;
 
   @media screen and (min-width: 376px) {
     width: 140px;
@@ -67,38 +67,37 @@ export const Img = styled.img`
 `;
 
 export const ProductTitle = styled.p`
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  color: #222831;
   width: 100px;
-  /* font-family: "Oswald", sans-serif; */
+  color: #222831;
   font-size: 15px;
+  overflow: hidden;
   margin-bottom: 3px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 
   @media screen and (min-width: 376px) {
     width: 140px;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   @media screen and (min-width: 500px) {
     width: 150px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   @media screen and (min-width: 601px) {
     width: 180px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   @media screen and (min-width: 769px) {
     width: 200px;
-    font-size: 22px;
+    font-size: 20px;
   }
 
   @media screen and (min-width: 1148px) {
     width: 240px;
-    font-size: 25px;
+    font-size: 22px;
   }
 
   &::-webkit-scrollbar {
@@ -108,38 +107,38 @@ export const ProductTitle = styled.p`
 
 
 export const ProductDetails = styled.p`
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  color: #222831;
   width: 100px;
-  /* font-family: "Josefin Sans", sans-serif; */
-  font-optical-sizing: auto;
+  color: #222831;
   font-size: 13px;
-
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-optical-sizing: auto;
+  /* font-family: "Josefin Sans", sans-serif; */
+  
   @media screen and (min-width: 376px) {
-    font-size: 15px;
+    font-size: 13px;
     width: 140px;
   }
 
   @media screen and (min-width: 500px) {
     width: 150px;
-    font-size: 18px;
+    font-size: 13px;
   }
 
   @media screen and (min-width: 601px) {
     width: 180px;
-    font-size: 21px;
+    font-size: 15px;
   }
 
   @media screen and (min-width: 769px) {
     width: 200px;
-    font-size: 25px;
+    font-size: 17px;
   }
 
   @media screen and (min-width: 1148px) {
     width: 240px;
-    font-size: 28px;
+    font-size: 19px;
   }
 
   &::-webkit-scrollbar {
@@ -147,63 +146,19 @@ export const ProductDetails = styled.p`
   }
 `;
 
-
-// export const Productprice = styled.h3`
-//   overflow: hidden;
-//   text-overflow: ellipsis;
-//   white-space: nowrap;
-//   color: #222831;
-//   width: 100px;
-//   font-family: "Josefin Sans", sans-serif;
-//   font-weight: 600;
-//   font-size: 15px;
-//   font-style: normal;
-//   margin-top: 7px;
-
-//   @media screen and (min-width: 376px) {
-//     font-size: 18px;
-//     width: 140px;
-//   }
-
-//   @media screen and (min-width: 500px) {
-//     width: 150px;
-//     font-size: 20px;
-//   }
-
-//   @media screen and (min-width: 601px) {
-//     width: 180px;
-//     font-size: 22px;
-//   }
-
-//   @media screen and (min-width: 769px) {
-//     width: 200px;
-//     font-size: 25px;
-//     margin-top: 10px;
-//   }
-
-//   @media screen and (min-width: 1148px) {
-//     width: 240px;
-//     font-size: 30px;
-//   }
-
-//   &::-webkit-scrollbar {
-//     display: none;
-//   }
-// `;
-
 export const Productprice = styled.h5`
-  font-size: 16px;
-  flex-wrap: wrap;
   width: 100%;
-  color: #386648;
   margin: 5px 0;
+  color: #386648;
+  font-size: 14px;
+  flex-wrap: wrap;
   letter-spacing: 0.70px;
 
   @media (min-width: 768px) {
-    font-size: 19px;
+    font-size: 16px;
   }
 
   @media (min-width: 1024px) {
-    font-size: 21px;
+    font-size: 18px;
   }
 `;

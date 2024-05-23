@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   width: 100vw;
   height: 220px;
-  background-color: #edede9;
   margin: 6px 0;
+  align-items: center;
+  background-color: #edede9;
+  justify-content: space-evenly;
 
   @media screen and (min-width: 376px) {
     height: 250px;
@@ -78,22 +78,23 @@ export const H1 = styled.h1`
   @media screen and (min-width: 1148px) {
     font-size: 22px;
   }
-`;
+  `;
 
 export const Button = styled.button`
   gap: 5px;
-  outline: none;
   width: 90px;
   height: 35px;
-  border: 1px solid black;
   padding: 5px;
-  border-radius: 5px;
   display: flex;
+  outline: none;
+  color: #000000;
   cursor: pointer;
   font-size: 14px;
   font-weight: 100;
   text-align: center;
+  border-radius: 5px;
   align-items: center;
+  border: 1px solid black;
   justify-content: center;
   background-color: transparent;
   font-family: "Jolly Lodger", system-ui;
@@ -170,14 +171,14 @@ export const Img = styled.img`
 
 export const BadgeItem = styled.div`
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   margin-left: 10px;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const Items = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
   gap: 5px;
+  display: flex;
+  margin-bottom: 15px;
+  flex-direction: column;
 `;

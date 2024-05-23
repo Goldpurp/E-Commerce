@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100vw;
-  height: 220px;
   margin: 6px 0;
+  height: 220px;
   display: flex;
   align-items: center;
   background-color: #edede9;
@@ -87,6 +87,7 @@ export const Button = styled.button`
   padding: 5px;
   display: flex;
   outline: none;
+  color: #000000;
   font-size: 14px;
   cursor: pointer;
   font-weight: 100;
@@ -170,14 +171,14 @@ export const Img = styled.img`
 
 export const BadgeItem = styled.div`
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   margin-left: 10px;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const Items = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
   gap: 5px;
+  display: flex;
+  margin-bottom: 15px;
+  flex-direction: column;
 `;

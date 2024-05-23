@@ -1,28 +1,28 @@
 import styled from "styled-components";
 
 export const Image = styled.img`
-  max-width: 100%;
   height: auto;
+  max-width: 100%;
 `;
 
 export const CarouselContainer = styled.div`
+  width: 100%;
   display: flex;
   overflow: hidden;
-  width: 100%;
 `;
 
 export const CarouselWrapper = styled.div`
   display: flex;
-  transition: transform 0.6s ease;
   max-width: 100%;
   flex-wrap: wrap;
+  transition: transform 0.6s ease;
 `;
 
 export const CarouselItem = styled.div`
   flex: 25%;
+  padding: 10px;
   max-width: 100%;
   box-sizing: border-box;
-  padding: 10px;
   transition: transform 0.5s ease;
 
   @media (max-width: 1200px) {
@@ -38,15 +38,15 @@ export const CarouselItem = styled.div`
   }
 
   @media (max-width: 480px) {
-    padding: 5px;
     flex: 1 50%;
+    padding: 5px;
     max-width: 50%;
   }
 `;
 
 export const CarouselBox = styled.div`
-  background: #ddd;
   padding: 0;
+  background: #ddd;
   text-align: center;
   border: 1px solid #e2e6e9;
   background-color: #e3e7eb;
@@ -54,11 +54,11 @@ export const CarouselBox = styled.div`
 
 
 export const Label = styled.p`
+  width: 100%;
   font-size: 14px;
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
-  width: 100%;
+  text-overflow: ellipsis;
 
   @media (min-width: 768px) {
     font-size: 15px;
@@ -70,11 +70,11 @@ export const Label = styled.p`
 `;
 
 export const Price = styled.h5`
+  width: 100%;
+  margin: 5px 0;
+  color: #386648;
   font-size: 16px;
   flex-wrap: wrap;
-  width: 100%;
-  color: #386648;
-  margin: 5px 0;
   letter-spacing: 0.70px;
 
   @media (min-width: 768px) {
@@ -87,10 +87,10 @@ export const Price = styled.h5`
 `;
 
 export const OldPrice = styled.span`
-  font-size: 14px;
-  flex-wrap: wrap;
   width: 100%;
   color: #780000;
+  font-size: 14px;
+  flex-wrap: wrap;
   margin: 2px 15px;
   text-decoration: line-through;
 
@@ -104,10 +104,10 @@ export const OldPrice = styled.span`
 `;
 
 export const Bonus = styled.p`
-  font-size: 10px;
-  flex-wrap: wrap;
   width: 100%;
   color: #9D2226;
+  font-size: 10px;
+  flex-wrap: wrap;
 
   @media (min-width: 768px) {
     font-size: 13px;

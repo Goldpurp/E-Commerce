@@ -35,6 +35,7 @@ export const Button = styled.button`
   height: 45px;
   outline: none;
   display: flex;
+  color: #000000;
   cursor: pointer;
   font-size: 12px;
   font-weight: 300;

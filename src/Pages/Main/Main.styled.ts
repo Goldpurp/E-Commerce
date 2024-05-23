@@ -47,9 +47,9 @@ export const Dot = styled(GoDotFill)`
 
 export const H1 = styled.h1`
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 400;
   margin: 3px 0 5px 0;
-  text-shadow: 1px 1px 10px black;
+  text-shadow: 1px 1px 5px black;
   font-family: "Concert One", sans-serif;
 
   @media screen and (min-width: 500px) {

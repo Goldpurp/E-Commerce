@@ -7,18 +7,17 @@ export const Image = styled.img`
 `;
 
 export const Container = styled.div`
-  display: flex;
   width: 100%;
-  position: relative;
   display: flex;
-  justify-content: center;
+  position: relative;
   align-items: center;
+  justify-content: center;
 `;
 
 export const Brace = styled.div`
   display: flex;
-  flex-direction: column;
   position: absolute;
+  flex-direction: column;
 `;
 
 export const H1 = styled.h1`
@@ -27,13 +26,13 @@ export const H1 = styled.h1`
 `;
 
 export const Button = styled.button`
-align-self: center;
   color: #ffff;
   font-size: 30px;
   cursor: pointer;
   background: none;
-  border: 2px solid #ffff;
-  width: fit-content;
   padding: 3px 8px;
+  align-self: center;
+  width: fit-content;
   border-radius: 10px;
+  border: 2px solid #ffff;
 `;
