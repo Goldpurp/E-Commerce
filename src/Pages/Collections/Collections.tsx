@@ -1,11 +1,12 @@
 import Banner from "../../../public/Images/CollectionBanner.jpg";
 
 import {
-  Container,
+  H1,
+  Span,
   Image,
   Brace,
   Button,
-  H1
+  Container,
 } from "./Collections.styled";
 export default function Collections() {
   return (
@@ -13,8 +14,8 @@ export default function Collections() {
     <Image src={Banner} alt="" />
 
     <Brace>
-
-    <H1>COLLECTION</H1>
+    <Span>Explore Our New</Span> 
+    <H1>COLLECTIONS</H1>
     <Button>View</Button>
     </Brace>
     </Container>

@@ -8,6 +8,7 @@ export const Image = styled.img`
 
 export const Container = styled.div`
   width: 100%;
+  position: relative;
   display: flex;
   position: relative;
   align-items: center;
@@ -16,23 +17,38 @@ export const Container = styled.div`
 
 export const Brace = styled.div`
   display: flex;
+  text-align: center;
   position: absolute;
+  align-items: center;
   flex-direction: column;
+  justify-content: center;
+  font-family: "Irish Grover", system-ui;
 `;
 
 export const H1 = styled.h1`
   color: #ffff;
-  font-size: 30px;
+  font-size: 40px;
+`;
+
+export const Span = styled.span`
+  color: #ffff;
+  font-size: 20px;
 `;
 
 export const Button = styled.button`
   color: #ffff;
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
   background: none;
-  padding: 3px 8px;
+  padding: 2px 8px;
   align-self: center;
   width: fit-content;
-  border-radius: 10px;
-  border: 2px solid #ffff;
+  border-radius: 7px;
+  border: 1px solid #ffff;
+
+&:hover{
+  background: #dad7cd;
+  color: #343a40;
+  border: 1px solid #343a40;
+}
 `;
