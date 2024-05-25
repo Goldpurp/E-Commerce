@@ -9,7 +9,6 @@ export const LineContainer = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
-
 export const Line = styled.div`
   margin: 0;
   display: flex;

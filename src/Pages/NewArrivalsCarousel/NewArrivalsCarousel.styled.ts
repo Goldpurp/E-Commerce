@@ -7,7 +7,8 @@ export const CarouselContainer = styled.div`
   width: 100%;
   display: flex;
   overflow: hidden;
-  margin-left: 5px;
+  padding-left: 5px;
+  margin-bottom: 10px;
 `;
 
 export const Row = styled.div`
@@ -83,7 +84,7 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h3`
-  font-size: 16px;
+  font-size: 13px;
   padding: 3px 0;
   font-weight: 400;
   overflow: hidden;
@@ -106,7 +107,7 @@ export const Title = styled.h3`
 export const Description = styled.p`
   color: #666;
   margin: 5px 0;
-  font-size: 13px;
+  font-size: 11px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -125,9 +126,9 @@ export const Description = styled.p`
 `;
 
 export const Price = styled.div`
-  margin: 5px 0;
+  margin: 8px 0;
   color: #2d6a4f;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
 
   @media (min-width: 768px) {
@@ -183,9 +184,9 @@ export const CartItem = styled(TiShoppingCart)`
 `;
 
 export const ReactionsContainer = styled.div`
-  gap: 10px;
-  right: 5px;
-  bottom: 10px;
+  gap: 12px;
+  right: 7px;
+  bottom: 12px;
   display: flex;
   position: absolute;
 

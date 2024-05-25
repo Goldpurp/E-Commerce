@@ -21,28 +21,21 @@ export const CarouselWrapper = styled.div`
 `;
 
 export const CarouselItem = styled.div`
-  flex: 25%;
-  padding: 10px;
-  max-width: 100%;
+  flex: 1 50%;
+  padding: 5px;
+  max-width: 50%;
   box-sizing: border-box;
   transition: transform 0.5s ease;
 
-  @media (max-width: 1318px) {
-    padding: 7px;
+  @media (min-width: 480px) {
     flex: 1 33.33%;
     max-width: 33.33%;
   }
 
-  @media (max-width: 768px) {
-    padding: 5px;
-    flex: 1 33.33%;
-    max-width: 33.33%;
-  }
-
-  @media (max-width: 480px) {
-    flex: 1 50%;
-    padding: 5px;
-    max-width: 50%;
+  @media (min-width: 1318px) {
+    flex: 1 25%;
+    padding: 10px;
+    max-width: 25%;
   }
 `;
 
@@ -56,9 +49,13 @@ export const CarouselBox = styled.div`
   background-color: #e3e7eb;
 `;
 
+export const Brace = styled.div`
+  padding: 5px;
+`;
+
 export const Label = styled.p`
   width: 100%;
-  font-size: 14px;
+  font-size: 12px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -76,40 +73,40 @@ export const Price = styled.h5`
   width: 100%;
   margin: 5px 0;
   color: #386648;
-  font-size: 16px;
+  font-size: 13px;
   flex-wrap: wrap;
   letter-spacing: 0.7px;
 
   @media (min-width: 768px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   @media (min-width: 1024px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 `;
 
 export const OldPrice = styled.span`
   width: 100%;
   color: #780000;
-  font-size: 14px;
+  font-size: 11px;
   flex-wrap: wrap;
-  margin: 2px 15px;
+  margin: 2px 10px;
   text-decoration: line-through;
 
   @media (min-width: 768px) {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   @media (min-width: 1024px) {
-    font-size: 16px;
+    font-size: 15px;
   }
 `;
 
 export const Bonus = styled.p`
   width: 100%;
   color: #9d2226;
-  font-size: 10px;
+  font-size: 9px;
   flex-wrap: wrap;
 
   @media (min-width: 768px) {

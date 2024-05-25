@@ -5,15 +5,19 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 export const Container = styled.div`
   width: 100%;
-  height: 91px;
+  height: 70px;
   display: flex;
   padding: 0 20px;
   text-align: center;
   position: relative;;
   align-items: center;
   background-color: #cbcbcb;
-  justify-content: space-between;
   font-family: "Lora", serif;
+  justify-content: space-between;
+
+  @media only screen and (min-width: 601px) {
+    height: 91px;
+  }
 `;
 
 export const MobileHeaderNavContainer = styled.div`
@@ -50,31 +54,31 @@ export const Hamburger = styled.div`
 `;
 
 export const MenuOpen = styled(GiHamburgerMenu)`
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
 `;
 
 export const MenuClose = styled(MdClose)`
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
 `;
 
 export const Icon = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
   border-radius: 50%;
 `;
 
 export const LogoIcon = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
   margin-left: -10px;
 
   @media (min-width: 430px) {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
   }
 `;
 
