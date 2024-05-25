@@ -1,20 +1,22 @@
-import Carousel from "../../component/Carousel/Carousel";
+import NewArrivalsCarousel from "../NewArrivalsCarousel/NewArrivalsCarousel";
 import Badge from "../Badge/Badge";
 import Collections from "../Collections/Collections";
 import Header from "../Header/Header";
 import Hero from "../Hero/Hero";
-import Section from "../Section/Section";
+import Section from "../ProductGridList/ProductGridList";
+// import Footer from "../../component/Footer/Footer";
+
 import {
-  LineContainer,
-  Line,
-  HrLines,
-  Dot,
   H1,
+  Dot,
+  Line,
   Span,
-  ButtonContainer,
+  HrLines,
   Buttons,
   TrendsBrace,
   TitleTrends,
+  LineContainer,
+  ButtonContainer,
 } from "./Main.styled";
 
 export default function Main() {
@@ -45,7 +47,7 @@ export default function Main() {
         </Line>
       </LineContainer>
 
-      <Carousel />
+      <NewArrivalsCarousel/>
 
       <TrendsBrace>
         <div>
@@ -63,7 +65,10 @@ export default function Main() {
 
       <Collections/>
 
-      <footer/>
+
+
+
+      {/* <Footer/> */}
       
     </>
   );

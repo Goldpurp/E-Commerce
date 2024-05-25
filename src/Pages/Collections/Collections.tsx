@@ -1,17 +1,17 @@
-import Banner from "../../../public/Images/CollectionBanner.jpg";
-
 import {
   H1,
   Span,
-  Image,
   Brace,
   Button,
   Container,
+  ImageContainer,
 } from "./Collections.styled";
 export default function Collections() {
   return (
     <Container>
-    <Image src={Banner} alt="" />
+
+      <ImageContainer>
+      </ImageContainer>
 
     <Brace>
     <Span>Explore Our New</Span> 
