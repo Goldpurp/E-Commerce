@@ -4,7 +4,7 @@ import Collections from "../Collections/Collections";
 import Header from "../Header/Header";
 import Hero from "../Hero/Hero";
 import Section from "../ProductGridList/ProductGridList";
-// import Footer from "../../component/Footer/Footer";
+import Footer from "../../component/Footer/Footer";
 
 import {
   H1,
@@ -68,7 +68,7 @@ export default function Main() {
 
 
 
-      {/* <Footer/> */}
+      <Footer/>
       
     </>
   );

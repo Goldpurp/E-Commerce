@@ -77,7 +77,6 @@ export const Span = styled.span`
   font-size: 20px;
   text-shadow: 1px 1px 5px black;
 
-
   @media screen and (min-width: 500px) {
     font-size: 24px;
   }
@@ -102,12 +101,12 @@ export const Button = styled.button`
   margin-top: 10px;
   background: none;
   padding: 2px 8px;
+  transition: 700ms;
   align-self: center;
   width: fit-content;
   border-radius: 7px;
   border: 1px solid #ffff;
   text-shadow: 1px 1px 5px black;
-
 
   @media screen and (min-width: 500px) {
     font-size: 30px;
@@ -125,12 +124,10 @@ export const Button = styled.button`
     font-size: 50px;
   }
 
-&:hover{
-  color: #343a40;
-  background: #dad7cd;
-  border: 1px solid #343a40;
-  text-shadow: 1px 1px 5px black;
-}
-
-transition: 700ms;
+  &:hover {
+    color: #343a40;
+    background: #dad7cd;
+    border: 1px solid #343a40;
+    text-shadow: 1px 1px 5px black;
+  }
 `;

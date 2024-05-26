@@ -73,7 +73,6 @@ export default function Header() {
 
         <LoginFrame>
           <Cart />
-
           <Icon src={ImgIcon} alt="Icon" />
         </LoginFrame>
 

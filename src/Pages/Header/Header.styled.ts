@@ -9,7 +9,7 @@ export const Container = styled.div`
   display: flex;
   padding: 0 20px;
   text-align: center;
-  position: relative;;
+  position: relative;
   align-items: center;
   background-color: #cbcbcb;
   font-family: "Lora", serif;
@@ -28,17 +28,18 @@ export const MobileHeaderNavContainer = styled.div`
   position: relative;
   align-items: center;
   justify-content: space-between;
-  font-family: "Lora", serif;
 `;
 
 export const NavLogo = styled.div`
   display: flex;
   font-size: 12px;
   cursor: pointer;
+  margin-left: -15px;
   align-items: center;
 
   @media (min-width: 430px) {
     font-size: 22px;
+    margin-left: 0px;
   }
 `;
 
@@ -83,7 +84,7 @@ export const LogoIcon = styled.img`
 `;
 
 export const LogoText = styled.h2`
-  font-size: 20px;
+  font-size: 23px;
   cursor: pointer;
   margin-left: -15px;
   font-family: cursive;
@@ -99,12 +100,13 @@ export const LogoText = styled.h2`
 `;
 
 export const LogoText2 = styled.span`
-  font-size: 12px;
+  font-size: 14px;
   cursor: pointer;
   font-family: cursive;
 `;
 
 export const LoginFrame = styled.div`
+  gap: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
