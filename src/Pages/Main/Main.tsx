@@ -7,17 +7,18 @@ import Section from "../ProductGridList/ProductGridList";
 import Footer from "../../component/Footer/Footer";
 
 import {
-  H1,
-  Dot,
-  Line,
-  Span,
-  HrLines,
+  // H1,
+  // Dot,
+  // Line,
+  // Span,
+  // HrLines,
   Buttons,
   TrendsBrace,
   TitleTrends,
-  LineContainer,
+  // LineContainer,
   ButtonContainer,
 } from "./Main.styled";
+import DecorativeText from "../../component/DecorativeText/DecorativeText";
 
 export default function Main() {
   return (
@@ -26,7 +27,7 @@ export default function Main() {
       <Hero />
       <Badge />
 
-      <LineContainer>
+      {/* <LineContainer>
         <Line>
           <Dot />{" "}
           <span>
@@ -45,7 +46,10 @@ export default function Main() {
           </span>{" "}
           <Dot />
         </Line>
-      </LineContainer>
+      </LineContainer> */}
+
+      <DecorativeText/>
+
 
       <NewArrivalsCarousel/>
 

@@ -70,9 +70,9 @@ export default function Footer() {
       </SectionSocialIconBrace>
 
       <MailBrace>
-        <h5>Newslestter + Updates</h5>
+        <h4>Newslestter + Updates</h4>
           <Form>
-            <Input type="text" placeholder="Email address"/>
+            <Input type="email" placeholder="Email address"/>
             <Btn><Done /></Btn>
           </Form>
 

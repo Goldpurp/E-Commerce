@@ -26,143 +26,85 @@ const productList = [
     label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
     price: "24,999.99",
     oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
   },
   {
     src: Img4,
     label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
     price: "24,999.99",
     oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
   },
   {
     src: Img4,
     label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
     price: "24,999.99",
     oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
   },
   {
     src: Img4,
     label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
     price: "24,999.99",
     oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
   },
   {
     src: Img4,
     label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
     price: "24,999.99",
     oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
   },
   {
     src: Img4,
     label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
     price: "24,999.99",
     oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
   },
   {
     src: Img4,
     label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
     price: "24,999.99",
     oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
   },
   {
     src: Img4,
     label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
     price: "24,999.99",
     oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
   },
   {
     src: Img4,
     label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
     price: "24,999.99",
     oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
   },
   {
     src: Img4,
     label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
     price: "24,999.99",
     oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
   },
   {
     src: Img4,
     label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
     price: "24,999.99",
     oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
   },
   {
     src: Img4,
     label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
     price: "24,999.99",
     oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
   },
-  {
-    src: Img4,
-    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
-    price: "24,999.99",
-    oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
-  },
-  {
-    src: Img4,
-    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
-    price: "24,999.99",
-    oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
-  },
-  {
-    src: Img4,
-    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
-    price: "24,999.99",
-    oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
-  },
-  {
-    src: Img4,
-    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
-    price: "24,999.99",
-    oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
-  },
-  {
-    src: Img4,
-    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
-    price: "24,999.99",
-    oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
-  },
-  {
-    src: Img4,
-    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
-    price: "24,999.99",
-    oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
-  },
-  {
-    src: Img4,
-    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
-    price: "24,999.99",
-    oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
-  },
-  {
-    src: Img4,
-    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
-    price: "24,999.99",
-    oldPrice: "33,000.00",
-    bonus: "Get $20 Off On #50,000+ Orders!",
-  },
-  
-
 ];
 
 export default function ProductGridList() {
@@ -181,8 +123,8 @@ export default function ProductGridList() {
               <Label>{item.label}</Label>
               <Price>
                 {" "}
-                #{item.price}
-                <OldPrice> #{item.oldPrice}</OldPrice>
+                ₦{item.price}
+                <OldPrice> ₦{item.oldPrice}</OldPrice>
               </Price>
               <Bonus>{item.bonus}</Bonus>
             </Brace>

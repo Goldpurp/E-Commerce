@@ -9,6 +9,8 @@ export const CarouselContainer = styled.div`
   overflow: hidden;
   padding-left: 5px;
   margin-bottom: 10px;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: normal;
 `;
 
 export const Row = styled.div`
@@ -106,7 +108,6 @@ export const Title = styled.h3`
 
 export const Description = styled.p`
   color: #666;
-  margin: 5px 0;
   font-size: 11px;
   overflow: hidden;
   white-space: nowrap;

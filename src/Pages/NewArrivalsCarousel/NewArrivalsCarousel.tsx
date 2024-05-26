@@ -27,73 +27,73 @@ export default function NewArrivalsCarousel() {
       src: Img6,
       title: "Breathable Shirt",
       description: "Ethel Textured Knit Johnny Collar Shirt - white",
-      price: "$345.99",
+      price: "16,499.99",
     },
     {
       src: Img6,
       title: "Breathable Shirt",
       description: "Ethel Textured Knit Johnny Collar Shirt - white",
-      price: "$345.99",
-    },  {
+      price: "16,499.99",
+    },
+    {
       src: Img6,
       title: "Breathable Shirt",
       description: "Ethel Textured Knit Johnny Collar Shirt - white",
-      price: "$345.99",
-    },  {
+      price: "16,499.99",
+    },
+    {
       src: Img6,
       title: "Breathable Shirt",
       description: "Ethel Textured Knit Johnny Collar Shirt - white",
-      price: "$345.99",
-    },  {
+      price: "16,499.99",
+    },
+    {
       src: Img6,
       title: "Breathable Shirt",
       description: "Ethel Textured Knit Johnny Collar Shirt - white",
-      price: "$345.99",
-    },  {
+      price: "16,499.99",
+    },
+    {
       src: Img6,
       title: "Breathable Shirt",
       description: "Ethel Textured Knit Johnny Collar Shirt - white",
-      price: "$345.99",
-    },  {
+      price: "16,499.99",
+    },
+    {
       src: Img6,
       title: "Breathable Shirt",
       description: "Ethel Textured Knit Johnny Collar Shirt - white",
-      price: "$345.99",
-    },  {
+      price: "16,499.99",
+    },
+    {
       src: Img6,
       title: "Breathable Shirt",
       description: "Ethel Textured Knit Johnny Collar Shirt - white",
-      price: "$345.99",
-    },  {
+      price: "16,499.99",
+    },
+    {
       src: Img6,
       title: "Breathable Shirt",
       description: "Ethel Textured Knit Johnny Collar Shirt - white",
-      price: "$345.99",
-    },  {
+      price: "16,499.99",
+    },
+    {
       src: Img6,
       title: "Breathable Shirt",
       description: "Ethel Textured Knit Johnny Collar Shirt - white",
-      price: "$345.99",
-    },  {
+      price: "16,499.99",
+    },
+    {
       src: Img6,
       title: "Breathable Shirt",
       description: "Ethel Textured Knit Johnny Collar Shirt - white",
-      price: "$345.99",
-    },  {
+      price: "16,499.99",
+    },
+    {
       src: Img6,
       title: "Breathable Shirt",
       description: "Ethel Textured Knit Johnny Collar Shirt - white",
-      price: "$345.99",
-    },  {
-      src: Img6,
-      title: "Breathable Shirt",
-      description: "Ethel Textured Knit Johnny Collar Shirt - white",
-      price: "$345.99",
-    },  {
-      src: Img6,
-      title: "Breathable Shirt",
-      description: "Ethel Textured Knit Johnny Collar Shirt - white",
-      price: "$345.99",
+      price: "16,499.99",
     },
   ];
 
@@ -108,7 +108,7 @@ export default function NewArrivalsCarousel() {
             <Content>
               <Title>{item.title}</Title>
               <Description>{item.description}</Description>
-              <Price>{item.price}</Price>
+              <Price>₦{item.price}</Price>
               <ReactionsContainer>
                 <LikeItem />
                 <CartItem />

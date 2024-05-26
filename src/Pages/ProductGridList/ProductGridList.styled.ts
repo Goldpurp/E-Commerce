@@ -11,6 +11,8 @@ export const CarouselContainer = styled.div`
   display: flex;
   overflow: hidden;
   flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  letter-spacing: normal;
 `;
 
 export const CarouselWrapper = styled.div`

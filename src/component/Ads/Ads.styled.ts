@@ -5,6 +5,7 @@ export const Container = styled.div`
   display: flex;
   max-width: 220px;
   flex-direction: column;
+  animation: fadeIn 5s ease-out;
 
   @media screen and (min-width: 768px) {
     max-width: 320px;
@@ -13,6 +14,16 @@ export const Container = styled.div`
   @media screen and (min-width: 1025px) {
     max-width: 450px;
   }
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 `;
 
 export const P = styled.p`

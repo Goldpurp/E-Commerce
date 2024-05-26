@@ -47,7 +47,17 @@ export const Brace = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  animation: fadeIn 3s ease-out;
   font-family: "Irish Grover", system-ui;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 `;
 
 export const H1 = styled.h1`

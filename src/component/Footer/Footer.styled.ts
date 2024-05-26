@@ -13,11 +13,12 @@ import styled from "styled-components";
 export const FooterContainer = styled.footer`
   color: #fff;
   padding: 10px 20px;
+  font-family: Montserrat;
   background-color: #0b090a;
 `;
 
 export const SectionBrace = styled.div`
-  padding: 20px 0;
+  padding: 40px 0 30px 0;
 `;
 
 export const Section = styled.div`
@@ -44,9 +45,19 @@ export const Icon = styled.span`
 `;
 
 export const SectionContent = styled.div<sectionProp>`
-  margin-top: 1px;
-  font-size: 11px;
+  margin-top: 10px;
+  font-size: 12px;
+  animation: fadeIn 2s ease-out;
   display: ${(props) => (props.isOpen ? "block" : "none")};
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 `;
 
 export const Link = styled.a`
@@ -125,13 +136,14 @@ export const Refrence = styled.a`
 
 export const Text = styled.p`
   color: gray;
-  font-size: 11px;
+  font-size: 12px;
   text-decoration: none;
 `;
 
 export const MailBrace = styled.div`
   gap: 10px;
   display: flex;
+  padding-top: 10px;
   flex-direction: column;
 `;
 
@@ -143,8 +155,9 @@ export const Form = styled.form`
 export const Input = styled.input`
   color: #000;
   width: 100%;
-  height: 40px;
-  font-size: 11px;
+  height: 50px;
+  outline: none;
+  font-size: 13px;
   border-radius: 7px;
   background-color: #fff;
   border: 1px solid gray;
@@ -152,7 +165,7 @@ export const Input = styled.input`
 `;
 
 export const Btn = styled.button`
-  top: 5px;
+  top: 10px;
   right: 8px;
   width: 30px;
   color: #fff;
