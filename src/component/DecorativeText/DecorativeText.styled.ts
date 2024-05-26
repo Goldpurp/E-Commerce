@@ -63,9 +63,9 @@ export const StyledText = styled.h1`
   position: relative;
   color: transparent;
   animation: fadeIn 2s ease-out;
-  -webkit-background-clip: text;
   font-family: "Playfair Display", serif;
   background: linear-gradient(90deg, #252422 10%, #a39379 100%);
+  -webkit-background-clip: text;
   
   @media screen and (min-width: 560px) {
     font-size: 55px;
