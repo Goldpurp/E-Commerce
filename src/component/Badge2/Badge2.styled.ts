@@ -6,7 +6,7 @@ export const Container = styled.div`
   height: 220px;
   display: flex;
   align-items: center;
-  background-color: #edede9;
+  background-color: #f4f4f6;
   justify-content: space-evenly;
 
   @media screen and (min-width: 376px) {

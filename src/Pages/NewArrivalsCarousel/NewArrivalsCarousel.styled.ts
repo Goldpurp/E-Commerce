@@ -27,7 +27,7 @@ export const Row = styled.div`
 
 export const Card = styled.div`
   width: 160px;
-  height: 300px;
+  height: 320px;
   flex: 0 0 auto;
   overflow: hidden;
   position: relative;
@@ -60,7 +60,7 @@ export const Image = styled.img`
 
 export const ImageBrace = styled.div`
   width: 100%;
-  height: 70%;
+  height: 73%;
   border-radius: 5px;
   background-color: #d8dad3;
   box-shadow: 1px 1px 7px 1px gray;

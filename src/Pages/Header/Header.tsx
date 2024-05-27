@@ -23,7 +23,7 @@ import Logo from "../../../public/Images/logoIcon.png";
 import ImgIcon from "../../../public/Images/newIcon2.png";
 import { MdLogin } from "react-icons/md";
 import { LiaStoreSolid } from "react-icons/lia";
-import { RiArrowDownSFill } from "react-icons/ri";
+// import { RiArrowDownSFill } from "react-icons/ri";
 import { useState } from "react";
 
 export default function Header() {
@@ -36,10 +36,9 @@ export default function Header() {
   return (
     <>
       <Container>
-
-          <Hamburger onClick={toggleMenu}>
-            {IsOpen ? <MenuClose /> : <MenuOpen />}
-          </Hamburger>
+        <Hamburger onClick={toggleMenu}>
+          {IsOpen ? <MenuClose /> : <MenuOpen />}
+        </Hamburger>
 
         <NavLogo>
           <LogoIcon src={Logo} alt="logo" />
@@ -50,25 +49,20 @@ export default function Header() {
 
         <HeaderTabs>
           <Tabs>
-            Home
-            <RiArrowDownSFill />
+          Men
           </Tabs>
           <Tabs>
-            Men
-            <RiArrowDownSFill />
+          Women
           </Tabs>
           <Tabs>
-            Women
-            <RiArrowDownSFill />
+            Kids
           </Tabs>
           <Tabs>
             Brands
-            <RiArrowDownSFill />
           </Tabs>
-          <Tabs>
+          {/* <Tabs>
             New
-            <RiArrowDownSFill />
-          </Tabs>
+          </Tabs> */}
         </HeaderTabs>
 
         <LoginFrame>
@@ -76,29 +70,23 @@ export default function Header() {
           <Icon src={ImgIcon} alt="Icon" />
         </LoginFrame>
 
-
         <MobileMenu active={IsOpen}>
+          <MobileHeaderNavContainer>
+            <Hamburger onClick={toggleMenu}>
+              {IsOpen ? <MenuClose /> : <MenuOpen />}
+            </Hamburger>
 
-          <MobileHeaderNavContainer >
+            <NavLogo>
+              <LogoIcon src={Logo} alt="logo" />
+              <LogoText>
+                GoldPurp's <LogoText2>Vogue</LogoText2>
+              </LogoText>
+            </NavLogo>
 
-
-        <Hamburger onClick={toggleMenu}>
-            {IsOpen ? <MenuClose /> : <MenuOpen />}
-          </Hamburger>
-
-        <NavLogo>
-          <LogoIcon src={Logo} alt="logo" />
-          <LogoText>
-            GoldPurp's <LogoText2>Vogue</LogoText2>
-          </LogoText>
-        </NavLogo>
-
-        <LoginFrame>
-          <Cart />
-        </LoginFrame>
-
+            <LoginFrame>
+              <Cart />
+            </LoginFrame>
           </MobileHeaderNavContainer>
-
 
           <MobileMenuLines>
             <Tabs>All Products</Tabs>
@@ -130,7 +118,6 @@ export default function Header() {
             </Span>
           </MobileMenuLoginStyle>
         </MobileMenu>
-
       </Container>
     </>
   );

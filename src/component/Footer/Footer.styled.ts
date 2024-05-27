@@ -62,7 +62,7 @@ export const SectionContent = styled.div<sectionProp>`
 
 export const Link = styled.a`
   display: block;
-  padding: 5px 0;
+  padding: 8px 0;
   color: #adb5bd;
   text-decoration: none;
 

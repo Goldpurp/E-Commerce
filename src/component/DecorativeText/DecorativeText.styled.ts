@@ -10,19 +10,27 @@ export const Container = styled.div`
   justify-content: center;
 
   @media screen and (min-width: 425px) {
-    padding: 0px 150px;
-  }
-
-  @media screen and (min-width: 666px) {
-    padding: 0px 150px;
-  }
-
-  @media screen and (min-width: 768px) {
     padding: 0px 200px;
   }
 
+  @media screen and (min-width: 666px) {
+    padding: 0px 2500px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0px 300px;
+  }
+
   @media screen and (min-width: 990px) {
-    padding: 0px 270px;
+    padding: 0px 350px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 0px 470px;
+  }
+  
+  @media screen and (min-width: 1440px) {
+    padding: 0px 770px;
   }
 `;
 
