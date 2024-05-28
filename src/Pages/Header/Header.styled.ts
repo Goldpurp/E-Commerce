@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 export const Container = styled.div`
   width: 100%;
-  height: 70px;
+  height: 75px;
   display: flex;
   padding: 0 20px;
   font-weight: 600;
@@ -195,9 +195,9 @@ export const MobileMenu = styled.div<{ active: boolean }>`
     top: 0;
     z-index: 2;
     width: 98vw;
-    padding: 0 30px;
     height: 100vh;
     display: flex;
+    padding: 0 30px;
     position: fixed;
     flex-direction: column;
     align-items: flex-start;
@@ -218,7 +218,6 @@ export const MobileMenuLines = styled.div`
   width: 100%;
   padding: 10px 0;
   border-top: 1px solid black;
-  border-bottom: 1px solid black;
 `;
 
 export const MobileMenuLines2 = styled.div`
@@ -266,7 +265,6 @@ export const Tabs = styled.p`
   &:hover {
     color: #c4a163;
     transition: 600ms;
-    border-bottom: 1px solid #c4a163;
   }
 `;
 

@@ -19,12 +19,11 @@ import {
   MobileMenuLoginStyle,
   MobileHeaderNavContainer,
 } from "./Header.styled";
-import Logo from "../../../public/Images/logoIcon.png";
-import ImgIcon from "../../../public/Images/newIcon2.png";
+import { useState } from "react";
 import { MdLogin } from "react-icons/md";
 import { LiaStoreSolid } from "react-icons/lia";
-// import { RiArrowDownSFill } from "react-icons/ri";
-import { useState } from "react";
+import Logo from "../../../public/Images/logoIcon.png";
+import ImgIcon from "../../../public/Images/newIcon2.png";
 
 export default function Header() {
   const [IsOpen, SetIsOpen] = useState<boolean>(false);
@@ -48,18 +47,10 @@ export default function Header() {
         </NavLogo>
 
         <HeaderTabs>
-          <Tabs>
-          Men
-          </Tabs>
-          <Tabs>
-          Women
-          </Tabs>
-          <Tabs>
-            Kids
-          </Tabs>
-          <Tabs>
-            Brands
-          </Tabs>
+          <Tabs>Men</Tabs>
+          <Tabs>Women</Tabs>
+          <Tabs>Kids</Tabs>
+          <Tabs>Brands</Tabs>
           {/* <Tabs>
             New
           </Tabs> */}

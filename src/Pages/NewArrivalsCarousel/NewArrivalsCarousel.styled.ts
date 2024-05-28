@@ -30,11 +30,10 @@ export const Card = styled.div`
   height: 320px;
   flex: 0 0 auto;
   overflow: hidden;
-  position: relative;
+  margin-right: 8px;
   border-radius: 5px;
-  margin-right: 10px;
+  position: relative;
   background: #f8f8f8;
-  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
 
   @media screen and (min-width: 768px) {
     width: 190px;
@@ -53,6 +52,7 @@ export const Card = styled.div`
 `;
 
 export const Image = styled.img`
+  border: 0px;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -60,10 +60,10 @@ export const Image = styled.img`
 
 export const ImageBrace = styled.div`
   width: 100%;
-  height: 73%;
+  height: 72%;
   border-radius: 5px;
   background-color: #d8dad3;
-  box-shadow: 1px 1px 7px 1px gray;
+  box-shadow: 1px 1px 5px 1px gray;
 
   @media screen and (min-width: 768px) {
     width: 100%;

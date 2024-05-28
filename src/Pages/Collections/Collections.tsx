@@ -1,23 +1,26 @@
+import Banner from "../../../public/Images/col.jpg";
+import ShopNowBtn from "../../component/ShopNowBtn/ShopNowBtn";
+
 import {
   H1,
   Span,
   Brace,
-  Button,
+  Image,
   Container,
   ImageContainer,
 } from "./Collections.styled";
 export default function Collections() {
   return (
     <Container>
-
       <ImageContainer>
+        <Image src={Banner} alt="ColImages" />
       </ImageContainer>
 
-    <Brace>
-    <Span>Explore Our New</Span> 
-    <H1>COLLECTIONS</H1>
-    <Button>View</Button>
-    </Brace>
+      <Brace>
+        <Span>Explore Our</Span>
+        <H1>COLLECTIONS</H1>
+        <ShopNowBtn />
+      </Brace>
     </Container>
   );
 }

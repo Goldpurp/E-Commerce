@@ -136,7 +136,7 @@ export const Refrence = styled.a`
 
 export const Text = styled.p`
   color: gray;
-  font-size: 12px;
+  font-size: 10px;
   text-decoration: none;
 `;
 

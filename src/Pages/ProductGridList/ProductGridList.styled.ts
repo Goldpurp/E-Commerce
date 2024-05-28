@@ -2,8 +2,10 @@ import styled from "styled-components";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 
 export const Image = styled.img`
+  border: 0px;
   height: auto;
   max-width: 100%;
+  object-fit: cover;
 `;
 
 export const CarouselContainer = styled.div`
@@ -135,6 +137,7 @@ export const CarouselBtn = styled.button`
   cursor: pointer;
   transition: 700ms;
   border-radius: 30px;
+  border: 1px solid #000;
   background-color: #000;
 
   @media (min-width: 768px) {
@@ -143,7 +146,8 @@ export const CarouselBtn = styled.button`
 
   &:hover {
     color: #daddd8;
-    background-color: #1c1c1c;
+    background-color: #212529;
+    border: 1px solid #212529;
   }
 `;
 

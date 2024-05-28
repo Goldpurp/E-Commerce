@@ -2,7 +2,7 @@
 // import Img2 from "../../../public/Cards/Ads-2.png";
 // import Img3 from "../../../public/Cards/Ads-4.png";
 // import Img4 from "../../../public/Cards/Ads-4.png";
-import Img4 from "../../../public/Products/4.png";
+import Img4 from "../../../public/Products/1.png";
 import {
   Image,
   Label,
@@ -21,6 +21,62 @@ import {
 } from "./ProductGridList.styled";
 
 const productList = [
+  {
+    src: Img4,
+    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
+    price: "24,999.99",
+    oldPrice: "33,000.00",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
+  },
+  {
+    src: Img4,
+    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
+    price: "24,999.99",
+    oldPrice: "33,000.00",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
+  },
+  {
+    src: Img4,
+    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
+    price: "24,999.99",
+    oldPrice: "33,000.00",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
+  },
+  {
+    src: Img4,
+    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
+    price: "24,999.99",
+    oldPrice: "33,000.00",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
+  },
+  {
+    src: Img4,
+    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
+    price: "24,999.99",
+    oldPrice: "33,000.00",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
+  },
+  {
+    src: Img4,
+    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
+    price: "24,999.99",
+    oldPrice: "33,000.00",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
+  },
+  {
+    src: Img4,
+    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
+    price: "24,999.99",
+    oldPrice: "33,000.00",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
+  },
+  {
+    src: Img4,
+    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
+    price: "24,999.99",
+    oldPrice: "33,000.00",
+    bonus: "Get 10% Off On ₦50,000+ Orders!",
+  },
   {
     src: Img4,
     label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",

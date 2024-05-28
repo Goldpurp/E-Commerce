@@ -13,6 +13,8 @@ import {
   ButtonContainer,
 } from "./Main.styled";
 import DecorativeText from "../../component/DecorativeText/DecorativeText";
+import PromoAds from "../../component/PromoAds/PromoAds";
+import SectionsGrid from "../SectionsGrid/SectionsGrid";
 
 export default function Main() {
   return (
@@ -22,9 +24,12 @@ export default function Main() {
       <Badge />
       <DecorativeText/>
       <NewArrivalsCarousel/>
+      <PromoAds/>
+      <Collections/>
+      <SectionsGrid/>
       <TrendsBrace>
         <div>
-          <TitleTrends>Now Trending</TitleTrends>
+          <TitleTrends>Latest Trends</TitleTrends>
         </div>
         <ButtonContainer>
           <Buttons>Best Sellers</Buttons>
@@ -34,7 +39,6 @@ export default function Main() {
         </ButtonContainer>
       </TrendsBrace>
       <Section/>
-      <Collections/>
       <Footer/>
       
     </>

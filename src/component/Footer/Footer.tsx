@@ -80,14 +80,14 @@ export default function Footer() {
 
         <div>
           <Text>
-            By signing up for email, you agree to Fashion Nova's{" "}
+            By signing up for email, you agree to Goldpurp's Vogue{" "}
             <Refrence href="#">Terms of Service </Refrence> and{" "}
             <Refrence href="#">Privacy Policy</Refrence>. By submitting your
-            phone number, you agree to receive recurring automated promotional
+           email address, you agree to receive recurring automated promotional
             and personalized marketing text messages (e.g. cart reminders) from
-            Fashion Nova at the cell number used when signing up. Consent is not
+            Goldpurp's Vogue at the email address used when signing up. Consent is not
             a condition of any purchase. Reply HELP for help and STOP to cancel.
-            Msg frequency varies. Msg & data rates may apply. View{" "}
+            mail frequency varies. Msg & data rates may apply. View{" "}
             <Refrence href="#">Terms</Refrence> &{" "}
             <Refrence href="#">Privacy </Refrence>
           </Text>
