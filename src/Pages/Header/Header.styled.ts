@@ -1,3 +1,7 @@
+type sectionProp = {
+  isOpenItem: boolean;
+};
+
 import styled from "styled-components";
 import { MdClose } from "react-icons/md";
 import { BsCart4 } from "react-icons/bs";
@@ -286,5 +290,39 @@ export const Cart = styled(BsCart4)`
 
   &:hover {
     color: gray;
+  }
+`;
+
+
+export const MobileNavItemSection = styled.div`
+  padding: 10px 0;
+  border-top: 1px solid #333;
+`;
+
+export const MobileNavHeaderSection = styled.div`
+  display: flex;
+  cursor: pointer;
+  font-weight: bold;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const IconToggle = styled.span`
+  font-size: 20px;
+`;
+
+export const MobileNavContentSection = styled.div<sectionProp>`
+  margin-top: 10px;
+  font-size: 12px;
+  animation: fadeIn 2s ease-out;
+  display: ${(props) => (props.isOpenItem ? "block" : "none")};
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 `;

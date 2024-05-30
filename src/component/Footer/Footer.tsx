@@ -40,6 +40,7 @@ export default function Footer() {
   });
 
   const toggleSection = (section: keyof OpenState) => {
+    
     setIsOpen((prevState) => ({
       ...prevState,
       [section]: !prevState[section],

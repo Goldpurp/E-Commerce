@@ -1,17 +1,18 @@
 import styled from "styled-components";
+
 export const SaleBanner = styled.div`
+  color: white;
+  height: 140px;
   display: flex;
+  font-weight: bold;
   position: relative;
   align-items: center;
   justify-content: center;
-  background-color: #3c6e71;
-  color: white;
-  height: 140px;
+  background-color: #384655;
   font-family: Arial, sans-serif;
-  font-weight: bold;
 
   @media screen and (min-width: 768px) {
-    height: 190px;
+    height: 200px;
   }
 
   @media screen and (min-width: 1024px) {
@@ -29,11 +30,11 @@ export const SummerSale = styled.div`
 `;
 
 export const DiscountText = styled.div`
-  font-size: 20px;
-  position: absolute;
-  left: 7px;
   top: 7px;
+  left: 7px;
+  font-size: 20px;
   font-weight: 100;
+  position: absolute;
 
   @media screen and (min-width: 768px) {
     font-size: 24px;

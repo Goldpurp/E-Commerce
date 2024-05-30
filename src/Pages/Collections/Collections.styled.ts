@@ -15,7 +15,7 @@ export const ImageContainer = styled.div`
   height: 100%;
   display: flex;
   margin: 5px 0;
-  object-fit: contain;
+  object-fit: cover;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +31,7 @@ export const Image = styled.img`
 `;
 
 export const Brace = styled.div`
-bottom: 25%;
+  bottom: 25%;
   display: flex;
   text-align: center;
   position: absolute;
@@ -53,8 +53,8 @@ bottom: 25%;
 export const H1 = styled.h1`
   color: #ffff;
   font-size: 40px;
-  font-weight: 400;
-  line-height: 50px;
+  font-weight: 500;
+  line-height: 60px;
 
   @media screen and (min-width: 500px) {
     font-size: 45px;

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Image = styled.img`
-  border: 0px;
-  height: 100%;
   width: 100%;
+  height: 100%;
+  border: none;
   object-fit: cover;
 `;
 
@@ -24,14 +24,14 @@ export const CarouselWrapper = styled.div`
 `;
 
 export const CarouselItem = styled.div`
+  flex: 1 50%;
   display: flex;
+  max-width: 50%;
+  align-items: center;
+  box-sizing: border-box;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  flex: 1 50%;
   padding: 2px 5px 8px 5px;
-  max-width: 50%;
-  box-sizing: border-box;
   transition: transform 0.5s ease;
 
   @media (min-width: 500px) {
@@ -42,19 +42,31 @@ export const CarouselItem = styled.div`
 
 export const CarouselBox = styled.div`
   padding: 0;
+  width: 100%;
+  height: 180px;
   cursor: pointer;
   background: #ddd;
-  width: 100%;
-  height: 200px;
   text-align: center;
   border: 1px solid #e2e6e9;
   background-color: #e3e7eb;
 
   @media (min-width: 768px) {
+    height: 220px;
     font-size: 13px;
   }
 
   @media (min-width: 1024px) {
+    height: 250px;
+    font-size: 15px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 300px;
+    font-size: 15px;
+  }
+
+  @media (min-width: 1440px) {
+    height: 350px;
     font-size: 15px;
   }
 `;

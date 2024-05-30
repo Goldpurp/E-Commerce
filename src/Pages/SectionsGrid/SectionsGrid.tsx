@@ -1,6 +1,6 @@
-import ShoeImg from "../../../public/Products/shoe.jpg";
+import ShoeImg from "../../../public/Products/shoe.jpeg";
 import BagImg from "../../../public/Products/bag.jpg";
-import HatImg from "../../../public/Products/hat.jpg";
+import HatImg from "../../../public/Products/hat.jpeg";
 import ShadeImg from "../../../public/Products/shade.jpg";
 
 import {

@@ -1,6 +1,7 @@
 type sectionProp = {
   isOpen: boolean;
 };
+
 import { RiInstagramFill } from "react-icons/ri";
 import { FaPinterest } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";

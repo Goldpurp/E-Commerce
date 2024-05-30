@@ -12,6 +12,7 @@ import {
 export default function Collections() {
   return (
     <Container>
+
       <ImageContainer>
         <Image src={Banner} alt="ColImages" />
       </ImageContainer>

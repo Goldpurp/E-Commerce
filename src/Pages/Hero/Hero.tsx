@@ -5,8 +5,8 @@ import {
   HeroImagesMini,
 } from "./Hero.styled";
 import Ads from "../../component/Ads/Ads";
-import HeroImg from "../../../public/Images/heroImg2.png";
-import HeroImgMini from "../../../public/Images/heroImg2mini.png";
+import HeroImg from "../../../public/Images/hero3.png";
+import HeroImgMini from "../../../public/Images/heroMini3.png";
 export default function Hero() {
   return (
     <Container>
