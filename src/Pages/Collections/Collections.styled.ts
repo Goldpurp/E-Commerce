@@ -32,6 +32,7 @@ export const Image = styled.img`
 
 export const Brace = styled.div`
   bottom: 25%;
+  padding: 7px;
   display: flex;
   text-align: center;
   position: absolute;
@@ -39,6 +40,7 @@ export const Brace = styled.div`
   flex-direction: column;
   justify-content: center;
   animation: fadeIn 3s ease-out;
+  background: linear-gradient(160deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0) 100%);
 
   @keyframes fadeIn {
     from {

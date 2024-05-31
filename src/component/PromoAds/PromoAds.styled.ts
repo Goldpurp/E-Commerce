@@ -1,4 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes }  from "styled-components";
+
+const pulse = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
 
 export const SaleBanner = styled.div`
   color: white;
@@ -35,6 +47,9 @@ export const DiscountText = styled.div`
   font-size: 20px;
   font-weight: 100;
   position: absolute;
+
+  display: inline-block;
+  animation: ${pulse} 1.5s infinite;
 
   @media screen and (min-width: 768px) {
     font-size: 24px;

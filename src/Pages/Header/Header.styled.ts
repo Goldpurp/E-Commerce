@@ -195,8 +195,8 @@ export const HeaderTabs = styled.div`
 
 export const MobileMenu = styled.div<{ active: boolean }>`
   @media only screen and (max-width: 600px) {
-    left: 0;
     top: 0;
+    left: 0;
     z-index: 2;
     width: 98vw;
     height: 100vh;
@@ -218,38 +218,8 @@ export const MobileMenu = styled.div<{ active: boolean }>`
   }
 `;
 
-export const MobileMenuLines = styled.div`
-  width: 100%;
-  padding: 10px 0;
-  border-top: 1px solid black;
-`;
-
-export const MobileMenuLines2 = styled.div`
-  padding: 10px 0;
-`;
-
-export const MobileMenuLoginStyle = styled.div`
-  width: 100%;
-  border-bottom: 1px solid black;
-`;
-
-export const Span = styled.span`
-  gap: 5px;
-  margin: 5px;
-  display: flex;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-
-  &:hover {
-    color: gray;
-  }
-`;
-
 export const Tabs = styled.p`
-  display: flex;
-  align-items: center;
-
+  padding: 4px 0;
   @media only screen and (min-width: 601px) {
     font-size: 20px;
   }
@@ -293,10 +263,10 @@ export const Cart = styled(BsCart4)`
   }
 `;
 
-
 export const MobileNavItemSection = styled.div`
+  width: 83vw;
   padding: 10px 0;
-  border-top: 1px solid #333;
+  border-top: 1px solid #000;
 `;
 
 export const MobileNavHeaderSection = styled.div`
@@ -305,6 +275,11 @@ export const MobileNavHeaderSection = styled.div`
   font-weight: bold;
   align-items: center;
   justify-content: space-between;
+
+  &:hover {
+    color: #c4a163;
+    transition: 600ms;
+  }
 `;
 
 export const IconToggle = styled.span`
@@ -312,8 +287,8 @@ export const IconToggle = styled.span`
 `;
 
 export const MobileNavContentSection = styled.div<sectionProp>`
-  margin-top: 10px;
   font-size: 12px;
+  margin-top: 10px;
   animation: fadeIn 2s ease-out;
   display: ${(props) => (props.isOpenItem ? "block" : "none")};
 
@@ -325,4 +300,20 @@ export const MobileNavContentSection = styled.div<sectionProp>`
       opacity: 1;
     }
   }
+`;
+
+export const ListBrace = styled.div`
+  display: flex;
+  text-align: left;
+  overflow-y: scroll;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
+export const ItemLabel = styled.h4`
+  font-size: 16px;
 `;
