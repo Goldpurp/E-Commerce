@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { MdFavoriteBorder } from "react-icons/md";
 import { FaShare } from "react-icons/fa6";
+import { MdFavoriteBorder } from "react-icons/md";
 
 export const Container = styled.div`
   display: flex;
@@ -147,7 +147,8 @@ export const Button = styled.button`
   justify-content: center;
   gap: 10px;
   border-radius: 10px;
-  border: 1px solid;
+  border: 1px solid #000; 
+  color: #000;
 
   &:hover {
     border: 1px solid #495057;
@@ -192,6 +193,8 @@ export const AddToCartButton = styled.button`
 export const ButtonCount = styled.button`
   background-color: #f0f0f0;
   border: none;
+  color: #000;
+  outline: none;
   padding: 8px 12px;
   font-size: 18px;
   cursor: pointer;
@@ -210,6 +213,7 @@ export const Favorite = styled(MdFavoriteBorder)`
   width: 20px;
   height: 20px;
   cursor: pointer;
+  color: #000;
 `;
 
 export const Details = styled.h3`
