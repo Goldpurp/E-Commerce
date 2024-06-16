@@ -23,7 +23,7 @@ import {
 } from "./Header.styled";
 import { useState } from "react";
 import Logo from "../../../public/Images/logoIcon.png";
-import ImgIcon from "../../../public/Images/newIcon2.png";
+import ImgIcon from "../../../public/Images/profile.jpeg";
 
 export default function Header() {
   type OpenState = {
@@ -38,7 +38,7 @@ export default function Header() {
   };
 
   const [isOpenItem, setIsOpenItem] = useState({
-    AllProducts: false,
+    AllProducts: true,
     Clothing: false,
     Footwear: false,
     Accessories: false,

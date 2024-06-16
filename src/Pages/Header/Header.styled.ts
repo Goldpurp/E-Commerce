@@ -76,14 +76,14 @@ export const MenuClose = styled(MdClose)`
 `;
 
 export const Icon = styled.img`
-  width: 45px;
-  height: 45px;
+  width: 33px;
+  height: 33px;
   cursor: pointer;
   border-radius: 50%;
 
   @media only screen and (min-width: 1024px) {
-    width: 47px;
-    height: 47px;
+    width: 40px;
+    height: 40px;
   }
 `;
 
@@ -259,7 +259,7 @@ export const Cart = styled(BsCart4)`
   }
 
   &:hover {
-    color: gray;
+    color: #495057;
   }
 `;
 

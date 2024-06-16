@@ -20,7 +20,7 @@ export const SaleBanner = styled.div`
   position: relative;
   align-items: center;
   justify-content: center;
-  background-color: #384655;
+  background-color: #BAB597;
   font-family: Arial, sans-serif;
 
   @media screen and (min-width: 768px) {
@@ -44,6 +44,7 @@ export const SummerSale = styled.div`
 export const DiscountText = styled.div`
   top: 7px;
   left: 7px;
+  color: #660708;
   font-size: 20px;
   font-weight: 100;
   position: absolute;

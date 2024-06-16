@@ -46,8 +46,8 @@ export const Icon = styled.span`
 `;
 
 export const SectionContent = styled.div<sectionProp>`
-  margin-top: 10px;
   font-size: 12px;
+  margin-top: 10px;
   animation: fadeIn 2s ease-out;
   display: ${(props) => (props.isOpen ? "block" : "none")};
 

@@ -40,7 +40,6 @@ export default function Footer() {
   });
 
   const toggleSection = (section: keyof OpenState) => {
-    
     setIsOpen((prevState) => ({
       ...prevState,
       [section]: !prevState[section],
@@ -84,11 +83,11 @@ export default function Footer() {
             By signing up for email, you agree to Goldpurp's Vogue{" "}
             <Refrence href="#">Terms of Service </Refrence> and{" "}
             <Refrence href="#">Privacy Policy</Refrence>. By submitting your
-           email address, you agree to receive recurring automated promotional
+            email address, you agree to receive recurring automated promotional
             and personalized marketing text messages (e.g. cart reminders) from
-            Goldpurp's Vogue at the email address used when signing up. Consent is not
-            a condition of any purchase. Reply HELP for help and STOP to cancel.
-            mail frequency varies. Msg & data rates may apply. View{" "}
+            Goldpurp's Vogue at the email address used when signing up. Consent
+            is not a condition of any purchase. Reply HELP for help and STOP to
+            cancel. mail frequency varies. Msg & data rates may apply. View{" "}
             <Refrence href="#">Terms</Refrence> &{" "}
             <Refrence href="#">Privacy </Refrence>
           </Text>

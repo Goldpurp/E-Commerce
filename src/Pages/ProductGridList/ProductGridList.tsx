@@ -119,48 +119,6 @@ const productList = [
     oldPrice: "33,000.00",
     bonus: "Get 10% Off On ₦50,000+ Orders!",
   },
-  {
-    src: Img4,
-    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
-    price: "24,999.99",
-    oldPrice: "33,000.00",
-    bonus: "Get 10% Off On ₦50,000+ Orders!",
-  },
-  {
-    src: Img4,
-    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
-    price: "24,999.99",
-    oldPrice: "33,000.00",
-    bonus: "Get 10% Off On ₦50,000+ Orders!",
-  },
-  {
-    src: Img4,
-    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
-    price: "24,999.99",
-    oldPrice: "33,000.00",
-    bonus: "Get 10% Off On ₦50,000+ Orders!",
-  },
-  {
-    src: Img4,
-    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
-    price: "24,999.99",
-    oldPrice: "33,000.00",
-    bonus: "Get 10% Off On ₦50,000+ Orders!",
-  },
-  {
-    src: Img4,
-    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
-    price: "24,999.99",
-    oldPrice: "33,000.00",
-    bonus: "Get 10% Off On ₦50,000+ Orders!",
-  },
-  {
-    src: Img4,
-    label: "Los Angeles Palm Trees Oversized Short Sleeve Tee - Charcoal",
-    price: "24,999.99",
-    oldPrice: "33,000.00",
-    bonus: "Get 10% Off On ₦50,000+ Orders!",
-  },
 ];
 
 export default function ProductGridList() {

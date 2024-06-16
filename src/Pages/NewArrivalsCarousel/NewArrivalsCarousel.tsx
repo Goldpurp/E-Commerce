@@ -107,6 +107,7 @@ export default function NewArrivalsCarousel() {
             </ImageBrace>
             <Content>
               <Title>{item.title}</Title>
+              
               <Description>{item.description}</Description>
               <Price>₦{item.price}</Price>
               <ReactionsContainer>
