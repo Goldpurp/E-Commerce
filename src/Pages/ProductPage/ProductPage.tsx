@@ -25,9 +25,16 @@ import Img2 from "../../../public/ModalImgCards/2.webp";
 import Img3 from "../../../public/ModalImgCards/3.webp";
 import Img4 from "../../../public/ModalImgCards/4.webp";
 import { useState } from "react";
+import DrawerProductPage from "../../component/DrawerProductPage/DrawerProductPage";
 
 const ProductPage = () => {
   const [value, setValue] = useState(1);
+
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
 
   const handleIncrement = () => {
     setValue((prevValue) => prevValue + 1);
@@ -48,7 +55,7 @@ const ProductPage = () => {
       <InfoSection>
         <ShareBrace>
         <Title>Levi’s Men’s Slim Trucker Jacket</Title>
-        <Share />
+        <Share onClick={toggleDrawer}/>
             
         </ShareBrace>
         <Price>
@@ -84,6 +91,9 @@ const ProductPage = () => {
           <Favorite /> Add to Wishlist
         </Button>
       </InfoSection>
+
+
+      <DrawerProductPage isOpen={isDrawerOpen} onClose={toggleDrawer}/>
     </Container>
   );
 };
