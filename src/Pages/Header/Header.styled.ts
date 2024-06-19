@@ -3,22 +3,23 @@ type sectionProp = {
 };
 
 import styled from "styled-components";
-import { MdClose } from "react-icons/md";
-import { BsCart4 } from "react-icons/bs";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { VscClose } from "react-icons/vsc";
+import { GiShoppingCart } from "react-icons/gi";
+import { IoSearchOutline } from "react-icons/io5";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export const Container = styled.div`
   width: 100%;
   height: 75px;
   display: flex;
   padding: 0 20px;
-  font-weight: 600;
+  font-weight: 300;
   text-align: center;
   position: relative;
   align-items: center;
   background-color: #ffff;
   justify-content: space-between;
-  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
 
   @media only screen and (min-width: 601px) {
     height: 90px;
@@ -65,97 +66,52 @@ export const Hamburger = styled.div`
   }
 `;
 
-export const MenuOpen = styled(GiHamburgerMenu)`
+export const MenuOpen = styled(RxHamburgerMenu)`
   font-size: 25px;
   cursor: pointer;
 `;
 
-export const MenuClose = styled(MdClose)`
+export const MenuClose = styled(VscClose)`
   font-size: 25px;
   cursor: pointer;
 `;
 
 export const Icon = styled.img`
-  width: 33px;
-  height: 33px;
+  width: 28px;
+  height: 28px;
   cursor: pointer;
   border-radius: 50%;
 
   @media only screen and (min-width: 1024px) {
-    width: 40px;
-    height: 40px;
+    width: 33px;
+    height: 33px;
   }
 `;
 
 export const LogoIcon = styled.img`
-  width: 60px;
-  height: 60px;
+  width: 170px;
   cursor: pointer;
-  margin-left: -10px;
+  margin-left: -20px;
 
   @media screen and (min-width: 430px) {
-    width: 75px;
-    height: 75px;
+    width: 180px;
+    margin-left: -20px;
+  }
+
+  @media only screen and (min-width: 601px) {
+    margin-left: -30px;
   }
 
   @media only screen and (min-width: 768px) {
-    width: 75px;
-    height: 75px;
+    width: 220px;
   }
 
   @media only screen and (min-width: 1024px) {
-    width: 85px;
-    height: 85px;
+    width: 230px;
   }
 
   @media only screen and (min-width: 1440px) {
-    width: 90px;
-    height: 90px;
-  }
-`;
-
-export const LogoText = styled.h2`
-  font-size: 24px;
-  cursor: pointer;
-  margin-left: -19px;
-  font-family: cursive;
-
-  @media only screen and (min-width: 601px) {
-    font-size: 16px;
-    margin-left: -10%;
-  }
-
-  @media only screen and (min-width: 667px) {
-    font-size: 23px;
-    margin-left: -25px;
-  }
-
-  @media only screen and (min-width: 700px) {
-    margin-left: -12%;
-  }
-
-  @media only screen and (min-width: 768px) {
-    font-size: 28px;
-    margin-left: -10%;
-  }
-
-  @media only screen and (min-width: 1024px) {
-    font-size: 33px;
-    margin-left: -9%;
-  }
-`;
-
-export const LogoText2 = styled.span`
-  font-size: 16px;
-  cursor: pointer;
-  font-family: cursive;
-
-  @media only screen and (min-width: 768px) {
-    font-size: 19px;
-  }
-
-  @media only screen and (min-width: 1024px) {
-    font-size: 23px;
+    width: 240px;
   }
 `;
 
@@ -166,7 +122,7 @@ export const LoginFrame = styled.div`
   justify-content: center;
 
   @media only screen and (min-width: 1024px) {
-    gap: 15px;
+    gap: 10px;
   }
 `;
 
@@ -176,7 +132,6 @@ export const HeaderTabs = styled.div`
   }
 
   @media only screen and (min-width: 601px) {
-    gap: 17px;
     display: flex;
     cursor: pointer;
     flex-direction: row;
@@ -184,12 +139,8 @@ export const HeaderTabs = styled.div`
     justify-content: space-between;
   }
 
-  @media only screen and (min-width: 768px) {
-    gap: 21px;
-  }
-
   @media only screen and (min-width: 1024px) {
-    gap: 23px;
+    gap: 15px;
   }
 `;
 
@@ -220,36 +171,49 @@ export const MobileMenu = styled.div<{ active: boolean }>`
 
 export const Tabs = styled.p`
   padding: 4px 0;
+
   @media only screen and (min-width: 601px) {
-    font-size: 20px;
-  }
-
-  @media only screen and (min-width: 768px) {
-    font-size: 22px;
-  }
-
-  @media only screen and (min-width: 1024px) {
-    font-size: 25px;
-  }
-
-  @media only screen and (min-width: 1024px) {
-    font-size: 28px;
+    font-size: 19px;
   }
 
   &:hover {
     color: #c4a163;
-    transition: 600ms;
+    transition: 500ms;
   }
 `;
 
-export const Cart = styled(BsCart4)`
-  margin: 0 10px;
+export const TabsBackground = styled.div`
+    border-radius: 28px;
+    background-color: none;
+    width: fit-content;
+    padding: 1px 12px;
+
+    &:hover {
+      background-color: #F5F5F5;
+  }
+`;
+
+export const Cart = styled(GiShoppingCart)`
   cursor: pointer;
   font-size: 22px;
 
-  @media only screen and (max-width: 600px) {
-    margin: 0 5px;
+  @media only screen and (min-width: 601px) {
+    font-size: 25px;
   }
+
+  @media only screen and (min-width: 1024px) {
+    font-size: 30px;
+  }
+
+  &:hover {
+    color: #495057;
+  }
+`;
+
+export const Search = styled(IoSearchOutline)`
+  cursor: pointer;
+  font-size: 22px;
+
   @media only screen and (min-width: 601px) {
     font-size: 25px;
   }
@@ -272,7 +236,6 @@ export const MobileNavItemSection = styled.div`
 export const MobileNavHeaderSection = styled.div`
   display: flex;
   cursor: pointer;
-  font-weight: bold;
   align-items: center;
   justify-content: space-between;
 
@@ -316,4 +279,5 @@ export const ListBrace = styled.div`
 
 export const ItemLabel = styled.h4`
   font-size: 16px;
+  font-weight: 400;
 `;

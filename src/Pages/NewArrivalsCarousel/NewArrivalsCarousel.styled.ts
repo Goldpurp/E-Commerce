@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { TiShoppingCart } from "react-icons/ti";
+import { GiShoppingCart } from "react-icons/gi";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 
 export const CarouselContainer = styled.div`
@@ -163,7 +163,7 @@ export const LikeItem = styled(MdOutlineFavoriteBorder)`
   }
 `;
 
-export const CartItem = styled(TiShoppingCart)`
+export const CartItem = styled(GiShoppingCart)`
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -185,7 +185,7 @@ export const CartItem = styled(TiShoppingCart)`
 `;
 
 export const ReactionsContainer = styled.div`
-  gap: 12px;
+  gap: 10px;
   right: 7px;
   bottom: 12px;
   display: flex;
@@ -196,7 +196,7 @@ export const ReactionsContainer = styled.div`
     bottom: 15px;
   }
   @media screen and (min-width: 1024px) {
-    gap: 13px;
+    gap: 10px;
     right: 13px;
     bottom: 15px;
   }

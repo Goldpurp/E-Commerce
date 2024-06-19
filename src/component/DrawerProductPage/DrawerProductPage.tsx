@@ -5,56 +5,83 @@ import {
   ShareLink,
   ShareIcon,
   Input,
+  Share,
+  SocialsBraceY,
+  SocialsBrace,
   CopyBtn,
   Instagram,
   Pinterest,
   Whatsapp,
   Snapchat,
   Facebook,
-  Twitter
-
+  Twitter,
 } from "./DrawerProductPage.styled";
 
+type DrawerProductPageProps = {
+  isOpen: boolean;
+  onClose: () => void;
+};
 
-const DrawerProductPage = ({ isOpen, onClose }) => {
-
+const DrawerProductPage = ({ isOpen, onClose }: DrawerProductPageProps) => {
   return (
     <>
       <Overlay isOpen={isOpen} onClick={onClose} />
       <DrawerContainer isOpen={isOpen}>
-        <CloseButton onClick={onClose}>×</CloseButton>
-        <div style={{ padding: '20px' }}>
-          <h2>Share This</h2>
-          <Input
-            type="text"
-            value="https://www.product.link"
-            readOnly
-          />
-          <CopyBtn>
-            Copy URL
-          </CopyBtn>
-          <ShareLink>
-            <ShareIcon><Instagram /></ShareIcon>
-            <span> Share via Facebook </span>
-          </ShareLink>
-          <ShareLink>
-            <ShareIcon><Pinterest /></ShareIcon> Share via Pinterest
-          </ShareLink>
-          <ShareLink>
-            <ShareIcon><Whatsapp /></ShareIcon> Share via Twitter
-          </ShareLink>
-          <ShareLink>
-            <ShareIcon><Snapchat /></ShareIcon> Share via Facebook
-          </ShareLink>
-          <ShareLink>
-            <ShareIcon><Facebook /></ShareIcon> Share via Pinterest
-          </ShareLink>
-          <ShareLink>
-            <ShareIcon><Twitter /></ShareIcon> Share via Twitter
-          </ShareLink>
-        </div>
-      </DrawerContainer>
+        <CloseButton onClick={onClose}/>
 
+
+        <Share>Share</Share>
+
+        <SocialsBraceY>
+
+        <SocialsBrace>
+          <ShareLink>
+            <ShareIcon>
+              <Instagram />
+            </ShareIcon>
+            <span> Instagram </span>
+          </ShareLink>
+          <ShareLink>
+            <ShareIcon>
+              <Pinterest />
+            </ShareIcon>{" "}
+            Pinterest
+          </ShareLink>
+          <ShareLink>
+            <ShareIcon>
+              <Whatsapp />
+            </ShareIcon>{" "}
+            Whatsapp
+          </ShareLink>
+          <ShareLink>
+            <ShareIcon>
+              <Twitter />
+            </ShareIcon>{" "}
+            X
+          </ShareLink>
+          <ShareLink>
+            <ShareIcon>
+              <Snapchat />
+            </ShareIcon>{" "}
+            Snapchat
+          </ShareLink>
+          <ShareLink>
+            <ShareIcon>
+              <Facebook />
+            </ShareIcon>{" "}
+            Facebook
+          </ShareLink>
+      
+        </SocialsBrace>
+        
+        <div>
+          <hr />
+          <Input type="text" value="https://www.product.link" readOnly />
+          <CopyBtn>Copy URL</CopyBtn>
+        </div>
+
+        </SocialsBraceY>
+      </DrawerContainer>
     </>
   );
 };

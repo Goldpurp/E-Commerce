@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { PiHandbagThin } from "react-icons/pi";
 
 export const Image = styled.img`
   border: 0px;
@@ -151,23 +151,23 @@ export const CarouselBtn = styled.button`
   }
 `;
 
-export const ShopItemBag = styled(HiOutlineShoppingBag)`
-  width: 25px;
-  height: 25px;
+export const ShopItemBag = styled(PiHandbagThin)`
+  width: 20px;
+  height: 20px;
   cursor: pointer;
   transition: 500ms;
 
   @media (min-width: 1440px) {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
 `;
 
 export const ShopItemBagBrace = styled.div`
   right: 5px;
   bottom: 7px;
-  width: 35px;
-  height: 35px;
+  width: 32px;
+  height: 32px;
   display: flex;
   position: absolute;
   border-radius: 50%;
@@ -177,8 +177,8 @@ export const ShopItemBagBrace = styled.div`
 
   @media (min-width: 1440px) {
     right: 10px;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     bottom: 12px;
   }
 `;

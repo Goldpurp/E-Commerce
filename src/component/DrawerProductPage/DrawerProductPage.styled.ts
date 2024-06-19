@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import { VscClose } from "react-icons/vsc";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaPinterest } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -6,15 +7,32 @@ import { FaSnapchatGhost } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
 
+const fadeOut = keyframes`
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+`;
 
-export const DrawerContainer = styled.div`
+export const DrawerContainer = styled.div<{ isOpen?: boolean }>`
   position: fixed;
   bottom: 0;
   left: 0;
-  height: 70%;
+  padding: 20px;
+  height: 40%;
   width: 100%;
-  background: white;
+  background: #f8f9fa;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
   transform: ${({ isOpen }) => (isOpen ? "translateY(0)" : "translateY(100%)")};
   transition: transform 0.3s ease-in-out;
@@ -22,66 +40,101 @@ export const DrawerContainer = styled.div`
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   overflow: hidden;
+  font-family: "Poppins", sans-serif;
 
-  /* @media (min-width: 768px) {
-    bottom: unset;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 300px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    transform: ${({ isOpen }) =>
-    isOpen ? "translateX(0)" : "translateX(100%)"};
-  } */
+  @media (min-width: 460px) {
+    top: 35%;
+    left: 10%;
+    height: 260px;
+    width: 380px;
+    border-radius: 10px;
+    animation: fadeIn 5s ease-out;
+    animation: ${(props) => (props.isOpen ? fadeIn : fadeOut)} 0.1s ease-out
+      forwards;
+  }
 
-  @media (min-width: 830px) {
-    width: 430px;
+  @media (min-width: 500px) {
+    left: 15%;
+  }
+
+  @media (min-width: 600px) {
+    left: 20%;
+  }
+
+  @media (min-width: 768px) {
+    left: 30%;
+  }
+
+  @media (min-width: 1024px) {
+    left: 35%;
+  }
+
+  @media (min-width: 1440px) {
+    left: 40%;
   }
 `;
 
-export const Overlay = styled.div`
+export const Overlay = styled.div<{ isOpen?: boolean }>`
   display: ${({ isOpen }) => (isOpen ? "block" : "none")};
   position: fixed;
   top: 0;
   left: 0;
+  justify-content: center;
+  align-items: center;
+
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
 `;
 
-export const CloseButton = styled.button`
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: none;
-  border: none;
-  font-size: 35px;
+export const CloseButton = styled(VscClose)`
+  font-size: 30px;
   cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 25px;
 `;
 
 export const ShareLink = styled.span`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   padding: 5px 10px;
+  font-size: 9px;
+  margin: 20px 0 10px 0;
   /* gap: 30%; */
   text-align: center;
+`;
 
-  margin-bottom: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+export const SocialsBrace = styled.div`
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
 
-
-  &:hover {
-    background: #f0f0f0;
+  &::-webkit-scrollbar {
+    display: none;
   }
 `;
 
+export const SocialsBraceY = styled.div`
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
+export const Share = styled.h4`
+  font-weight: 300;
+`;
+
 export const ShareIcon = styled.span`
-   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 30px;
@@ -90,9 +143,9 @@ export const ShareIcon = styled.span`
 
 export const Input = styled.input`
   width: 100%;
-  padding: 15px;
+  padding: 10px 15px;
   outline: none;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   margin-top: 20px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -100,8 +153,7 @@ export const Input = styled.input`
 
 export const CopyBtn = styled.button`
   width: 100%;
-  padding: 15px;
-  margin-bottom: 30px;
+  padding: 13px 15px;
   border-radius: 20px;
   border: none;
   background-color: black;
@@ -110,37 +162,37 @@ export const CopyBtn = styled.button`
 `;
 
 export const Instagram = styled(RiInstagramFill)`
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
 `;
 
 export const Pinterest = styled(FaPinterest)`
-    width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
 `;
 
 export const Whatsapp = styled(IoLogoWhatsapp)`
-   width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
 `;
 
 export const Snapchat = styled(FaSnapchatGhost)`
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
 `;
 
 export const Facebook = styled(FaFacebook)`
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
 `;
 
 export const Twitter = styled(FaXTwitter)`
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
 `;

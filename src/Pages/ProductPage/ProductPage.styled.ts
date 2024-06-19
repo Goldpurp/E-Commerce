@@ -4,24 +4,23 @@ import { MdFavoriteBorder } from "react-icons/md";
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 10px;
+  align-items: center;
+  flex-direction: column;
 
   @media (min-width: 830px) {
+    padding: 30px;
     flex-direction: row;
     align-items: flex-start;
-    padding: 30px;
   }
 `;
 
 export const ImageSection = styled.div`
   gap: 3px;
   display: flex;
+  overflow-x: scroll;
   flex-direction: row;
   align-items: center;
-
-  overflow-x: scroll;
   scrollbar-width: none;
 
   &::-webkit-scrollbar {
@@ -172,13 +171,13 @@ export const Value = styled.div`
 `;
 
 export const AddToCartButton = styled.button`
-  background-color: #2d6a4f;
-  border: none;
   color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 10px 30px;
   border-radius: 5px;
   padding: 10px 23px;
-  margin: 10px 30px;
-  cursor: pointer;
+  background-color: #2d6a4f;
   transition: background-color 0.3s;
 
   @media (min-width: 830px) {
@@ -212,14 +211,14 @@ export const ButtonCount = styled.button`
 export const Favorite = styled(MdFavoriteBorder)`
   width: 20px;
   height: 20px;
-  cursor: pointer;
   color: #000;
+  cursor: pointer;
 `;
 
 export const Details = styled.h3`
+  color: #000;
   font-size: 15px;
   padding: 10px 0;
-  color: #000;
 
   @media (min-width: 830px) {
     font-size: 17px;
@@ -229,8 +228,8 @@ export const Details = styled.h3`
 export const Share = styled(FaShare)`
   width: 20px;
   height: 20px;
-  cursor: pointer;
   color: #343a40;
+  cursor: pointer;
 `;
 
 export const ShareBrace = styled.div`

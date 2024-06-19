@@ -2,7 +2,7 @@
 // import Img2 from "../../../public/Cards/Ads-2.png";
 // import Img3 from "../../../public/Cards/Ads-4.png";
 // import Img4 from "../../../public/Cards/Ads-4.png";
-import Img4 from "../../../public/Products/1.png";
+import Img4 from "../../../public/Products/2.png";
 import {
   Image,
   Label,

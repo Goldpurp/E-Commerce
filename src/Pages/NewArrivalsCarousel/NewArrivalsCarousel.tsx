@@ -1,9 +1,3 @@
-// import Img1 from "../../../public/NewArrivals/1.png";
-// import Img2 from "../../../public/NewArrivals/2.png";
-// import Img3 from "../../../public/NewArrivals/3.png";
-// import Img4 from "../../../public/NewArrivals/4.png";
-// import Img5 from "../../../public/NewArrivals/5.png";
-// import Img7 from "../../../public/NewArrivals/7.png";
 import Img6 from "../../../public/NewArrivals/6.png";
 
 import {
