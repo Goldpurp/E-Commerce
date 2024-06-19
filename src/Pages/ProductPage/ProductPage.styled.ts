@@ -120,7 +120,7 @@ export const Size = styled.h3`
 export const SizesTabs = styled.span`
   font-size: 12px;
   padding: 3px 7px;
-  border: 1px solid black;
+  border: 1px solid #adb5bd;
   margin-right: 5px;
   border-radius: 5px;
 
@@ -146,7 +146,7 @@ export const Button = styled.button`
   justify-content: center;
   gap: 10px;
   border-radius: 10px;
-  border: 1px solid #000; 
+  border: 1px solid #adb5bd; 
   color: #000;
 
   &:hover {
@@ -171,12 +171,13 @@ export const Value = styled.div`
 `;
 
 export const AddToCartButton = styled.button`
-  color: #fff;
+  color: #ced4da;
   border: none;
   cursor: pointer;
   margin: 10px 30px;
   border-radius: 5px;
   padding: 10px 23px;
+  border: 0.6px solid #84a98c;
   background-color: #2d6a4f;
   transition: background-color 0.3s;
 
