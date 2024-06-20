@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100vw;
-  margin: 6px 0;
-  height: 220px;
   display: flex;
+  width: 100vw;
+  height: 220px;
+  margin: 6px 0;
   align-items: center;
-  background-color: #f4f4f6;
+  background-color: #eef0eb;
   justify-content: space-evenly;
 
   @media screen and (min-width: 376px) {
@@ -18,8 +18,8 @@ export const Container = styled.div`
   }
 
   @media screen and (min-width: 769px) {
-    width: 50vw;
     height: 250px;
+    width: 50vw;
   }
 
   @media screen and (min-width: 1148px) {
@@ -78,7 +78,7 @@ export const H1 = styled.h1`
   @media screen and (min-width: 1148px) {
     font-size: 22px;
   }
-`;
+  `;
 
 export const Button = styled.button`
   gap: 5px;
@@ -88,14 +88,14 @@ export const Button = styled.button`
   display: flex;
   outline: none;
   color: #000000;
-  font-size: 14px;
   cursor: pointer;
+  font-size: 14px;
   font-weight: 100;
   text-align: center;
   border-radius: 5px;
   align-items: center;
-  justify-content: center;
   border: 1px solid black;
+  justify-content: center;
   background-color: transparent;
   font-family: "Jolly Lodger", system-ui;
 

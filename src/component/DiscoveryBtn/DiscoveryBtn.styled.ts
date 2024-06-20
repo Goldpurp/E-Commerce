@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   max-width: 220px;
   flex-direction: column;
-  animation: fadeIn 5s ease-out;
+  animation: fadeIn 8s ease-out;
 
   @media screen and (min-width: 768px) {
     max-width: 320px;

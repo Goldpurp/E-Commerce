@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CopyRight from "../CopyRight/CopyRight";
 import {
   Btn,
   Icon,
@@ -16,7 +17,6 @@ import {
   MailBrace,
   Instagram,
   Pinterest,
-  Copyright,
   SectionTitle,
   SectionBrace,
   SectionHeader,
@@ -131,7 +131,7 @@ export default function Footer() {
         </Section>
       </SectionBrace>
 
-      <Copyright>© 2024 GoldPurp's Vogue, LLC All Rights Reserved</Copyright>
+      <CopyRight/>
     </FooterContainer>
   );
 }

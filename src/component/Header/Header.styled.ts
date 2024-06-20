@@ -1,7 +1,3 @@
-type sectionProp = {
-  isOpenItem: boolean;
-};
-
 import styled from "styled-components";
 import { VscClose } from "react-icons/vsc";
 import { GiShoppingCart } from "react-icons/gi";
@@ -10,24 +6,16 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 export const Container = styled.div`
   width: 100%;
-  height: 75px;
+  height: 60px;
   display: flex;
   padding: 0 20px;
   font-weight: 300;
   text-align: center;
   position: relative;
   align-items: center;
-  background-color: #ffff;
+  background-color: #fff;
   justify-content: space-between;
   font-family: "Poppins", sans-serif;
-
-  @media only screen and (min-width: 601px) {
-    height: 90px;
-  }
-
-  @media only screen and (min-width: 768px) {
-    padding: 0 28px;
-  }
 
   @media only screen and (min-width: 1024px) {
     padding: 0 35px;
@@ -38,9 +26,14 @@ export const Container = styled.div`
   }
 `;
 
+export const MainContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 export const MobileHeaderNavContainer = styled.div`
   width: 100%;
-  height: 91px;
+  height: 60px;
   display: flex;
   text-align: center;
   position: relative;
@@ -91,15 +84,9 @@ export const Icon = styled.img`
 export const LogoIcon = styled.img`
   width: 170px;
   cursor: pointer;
-  margin-left: -20px;
 
   @media screen and (min-width: 430px) {
     width: 180px;
-    margin-left: -20px;
-  }
-
-  @media only screen and (min-width: 601px) {
-    margin-left: -30px;
   }
 
   @media only screen and (min-width: 768px) {
@@ -126,30 +113,12 @@ export const LoginFrame = styled.div`
   }
 `;
 
-export const HeaderTabs = styled.div`
-  @media only screen and (max-width: 600px) {
-    display: none;
-  }
-
-  @media only screen and (min-width: 601px) {
-    display: flex;
-    cursor: pointer;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  @media only screen and (min-width: 1024px) {
-    gap: 15px;
-  }
-`;
-
 export const MobileMenu = styled.div<{ active: boolean }>`
   @media only screen and (max-width: 600px) {
     top: 0;
     left: 0;
     z-index: 2;
-    width: 98vw;
+    width: 95vw;
     height: 100vh;
     display: flex;
     padding: 0 30px;
@@ -166,30 +135,6 @@ export const MobileMenu = styled.div<{ active: boolean }>`
 
   @media only screen and (min-width: 601px) {
     display: none;
-  }
-`;
-
-export const Tabs = styled.p`
-  padding: 4px 0;
-
-  @media only screen and (min-width: 601px) {
-    font-size: 19px;
-  }
-
-  &:hover {
-    color: #c4a163;
-    transition: 500ms;
-  }
-`;
-
-export const TabsBackground = styled.div`
-    border-radius: 28px;
-    background-color: none;
-    width: fit-content;
-    padding: 1px 12px;
-
-    &:hover {
-      background-color: #F5F5F5;
   }
 `;
 
@@ -227,57 +172,33 @@ export const Search = styled(IoSearchOutline)`
   }
 `;
 
-export const MobileNavItemSection = styled.div`
-  width: 83vw;
-  padding: 10px 0;
-  border-top: 1px solid #000;
-`;
-
-export const MobileNavHeaderSection = styled.div`
+export const MenuBrace = styled.div`
   display: flex;
-  cursor: pointer;
-  align-items: center;
-  justify-content: space-between;
 
-  &:hover {
-    color: #c4a163;
-    transition: 600ms;
-  }
-`;
-
-export const IconToggle = styled.span`
-  font-size: 20px;
-`;
-
-export const MobileNavContentSection = styled.div<sectionProp>`
-  font-size: 12px;
-  margin-top: 10px;
-  animation: fadeIn 2s ease-out;
-  display: ${(props) => (props.isOpenItem ? "block" : "none")};
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-`;
-
-export const ListBrace = styled.div`
-  display: flex;
-  text-align: left;
-  overflow-y: scroll;
-  flex-direction: column;
-  justify-content: space-between;
-
-  &::-webkit-scrollbar {
+  @media only screen and (min-width: 769px) {
     display: none;
   }
 `;
 
-export const ItemLabel = styled.h4`
-  font-size: 16px;
-  font-weight: 400;
+export const BurgerMenuBrace = styled.div`
+  display: flex;
+  margin-left: -35px;
+  margin-bottom: 10px;
+
+  @media only screen and (min-width: 769px) {
+    display: none;
+  }
+`;
+
+export const MenuBraceBigScreen = styled.div`
+  display: none;
+
+  @media only screen and (min-width: 769px) {
+    display: flex;
+    width: 350px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    width: 400px;
+  }
 `;

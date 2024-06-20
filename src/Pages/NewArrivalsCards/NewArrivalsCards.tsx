@@ -13,7 +13,7 @@ import {
   Description,
   CarouselContainer,
   ReactionsContainer,
-} from "./NewArrivalsCarousel.styled";
+} from "./NewArrivalsCards.styled";
 
 export default function NewArrivalsCarousel() {
   const newArrivalItems = [

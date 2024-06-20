@@ -4,12 +4,13 @@ import { MdFavoriteBorder } from "react-icons/md";
 
 export const Container = styled.div`
   display: flex;
-  padding: 10px;
+  padding: 0 15px;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 30px;
 
   @media (min-width: 830px) {
-    padding: 30px;
+    padding: 0 30px;
     flex-direction: row;
     align-items: flex-start;
   }
@@ -161,7 +162,7 @@ export const QuantityBrace = styled.div`
 `;
 
 export const Value = styled.div`
-  padding: 8px 12px;
+  padding: 6px 12px;
   font-size: 15px;
   border: 1px solid #d0d0d0;
 
@@ -195,7 +196,7 @@ export const ButtonCount = styled.button`
   border: none;
   color: #000;
   outline: none;
-  padding: 8px 12px;
+  padding: 6px 12px;
   font-size: 18px;
   cursor: pointer;
   transition: background-color 0.3s;

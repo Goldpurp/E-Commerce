@@ -11,9 +11,9 @@ import {
   CarouselItem,
   CarouselWrapper,
   CarouselContainer,
-} from "./SectionsGrid.styled";
+} from "./ProductGallery.styled";
 
-export default function SectionsGrid() {
+export default function ProductGallery() {
   return (
     <CarouselContainer>
       <CarouselWrapper>

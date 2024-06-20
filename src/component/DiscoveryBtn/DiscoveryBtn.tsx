@@ -1,6 +1,6 @@
-import { Container, Button, H1, P } from "./Ads.styled";
+import { Container, Button, H1, P } from "./DiscoveryBtn.styled";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-export default function Ads() {
+export default function DiscoveryBtn() {
   return (
     <Container>
       <P>SUMMER SALE IS ON</P>

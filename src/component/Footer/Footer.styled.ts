@@ -72,11 +72,6 @@ export const Link = styled.a`
   }
 `;
 
-export const Copyright = styled.div`
-  font-size: 12px;
-  text-align: center;
-`;
-
 export const SectionSocialIconBrace = styled.div`
   gap: 15px;
   color: gray;
