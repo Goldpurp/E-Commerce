@@ -1,7 +1,9 @@
+import ProductGridList from "../ProductGridList/ProductGridList";
+
 export default function Brands(){
     return(
         <>
-        <h1>Brands</h1>
+        <ProductGridList/>
         </>
     );
 }

@@ -2,6 +2,7 @@ import { useState } from "react";
 import {
   Tabs,
   ItemLabel,
+  ReactLink,
   ListBrace,
   IconToggle,
   CopyRightBrace,
@@ -59,7 +60,7 @@ export default function SidebarMenu() {
           </MobileNavContentSection>
         </MobileNavItemSection> */}
 
-<MobileNavItemSection>
+        <MobileNavItemSection>
           <MobileNavHeaderSection
             onClick={() => toggleItemSection("Accessories")}
           >
@@ -181,8 +182,12 @@ export default function SidebarMenu() {
 
 
         <MobileNavItemSection>
-          <SpecialItemLabel>Wishlist</SpecialItemLabel>
-          <SpecialItemLabel>Login</SpecialItemLabel>
+          <ReactLink to={"wishlist"}>
+            <SpecialItemLabel>Wishlist</SpecialItemLabel>
+          </ReactLink>
+          <ReactLink to={"login"}>
+            <SpecialItemLabel>Login</SpecialItemLabel>
+          </ReactLink>
         </MobileNavItemSection>
 
         <MobileNavItemSection>
@@ -195,7 +200,7 @@ export default function SidebarMenu() {
         <hr />
 
         <CopyRightBrace>
-        <CopyRight/>
+          <CopyRight />
         </CopyRightBrace>
       </ListBrace>
     </>

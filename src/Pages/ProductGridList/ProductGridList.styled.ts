@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { PiHandbagThin } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
 export const Image = styled.img`
   border: 0px;
@@ -181,4 +182,12 @@ export const ShopItemBagBrace = styled.div`
     height: 40px;
     bottom: 12px;
   }
+`;
+
+export const ReactLink = styled(Link)`
+  color: #000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
 `;

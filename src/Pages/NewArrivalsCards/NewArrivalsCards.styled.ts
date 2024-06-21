@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { GiShoppingCart } from "react-icons/gi";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 export const CarouselContainer = styled.div`
   gap: 10px;
@@ -200,4 +201,12 @@ export const ReactionsContainer = styled.div`
     right: 13px;
     bottom: 15px;
   }
+`;
+
+export const ReactLink = styled(Link)`
+  color: #000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
 `;

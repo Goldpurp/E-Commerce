@@ -19,7 +19,7 @@ export const HeaderText = styled.h1`
  font-weight: 600;
  padding: 0 10px 10px 10px;
  font-family: "Montserrat", sans-serif;
- font-size: 28px;
+ font-size: 24px;
 
   @media screen and (min-width: 600px) {
   margin-left: 10%;

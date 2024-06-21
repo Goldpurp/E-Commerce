@@ -29,13 +29,7 @@ import DrawerProductPage from "../../component/DrawerProductPage/DrawerProductPa
 
 const ProductPage = () => {
   const [value, setValue] = useState(1);
-
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
-  const toggleDrawer = () => {
-    setIsDrawerOpen(!isDrawerOpen);
-  };
-
+  
   const handleIncrement = () => {
     setValue((prevValue) => prevValue + 1);
   };
@@ -43,6 +37,13 @@ const ProductPage = () => {
   const handleDecrement = () => {
     setValue((prevValue) => prevValue - 1);
   };
+  
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
+
 
   return (
     <Container>

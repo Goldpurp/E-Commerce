@@ -2,6 +2,7 @@ type sectionProp = {
     isOpenItem: boolean;
   };
   
+import { Link } from "react-router-dom";
   import styled from "styled-components";
 
   export const Tabs = styled.p`
@@ -86,4 +87,9 @@ export const MobileNavContentSection = styled.div<sectionProp>`
 
 export const CopyRightBrace = styled.div`
 padding: 70px 0 30px 0;
+`;
+
+export const ReactLink = styled(Link)`
+  color: #000;
+  text-decoration: none;
 `;

@@ -9,6 +9,7 @@ import {
   Content,
   CartItem,
   LikeItem,
+  ReactLink,
   ImageBrace,
   Description,
   CarouselContainer,
@@ -97,11 +98,12 @@ export default function NewArrivalsCarousel() {
         {newArrivalItems.map((item, itemIndex) => (
           <Card key={itemIndex}>
             <ImageBrace>
+            <ReactLink to={"product"}>
               <Image src={item.src} alt="image" />
+              </ReactLink>
             </ImageBrace>
             <Content>
               <Title>{item.title}</Title>
-              
               <Description>{item.description}</Description>
               <Price>₦{item.price}</Price>
               <ReactionsContainer>

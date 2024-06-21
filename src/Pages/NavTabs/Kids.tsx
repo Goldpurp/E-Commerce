@@ -1,7 +1,9 @@
+import ProductGridList from "../ProductGridList/ProductGridList";
+
 export default function Kids(){
     return(
         <>
-        <h1>Kids</h1>
+         <ProductGridList/>
         </>
     );
 }

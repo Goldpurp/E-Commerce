@@ -10,6 +10,7 @@ import {
   Brace,
   Bonus,
   OldPrice,
+  ReactLink,
   ShopItemBag,
   CarouselBtn,
   CarouselBox,
@@ -128,7 +129,9 @@ export default function ProductGridList() {
         {productList.map((item, itemIndex) => (
           <CarouselItem key={itemIndex}>
             <CarouselBox>
+              <ReactLink to={"product"}>
               <Image src={item.src} alt="image" />
+              </ReactLink>
               <ShopItemBagBrace>
                 <ShopItemBag />
               </ShopItemBagBrace>

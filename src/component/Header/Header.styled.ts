@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import { VscClose } from "react-icons/vsc";
-import { GiShoppingCart } from "react-icons/gi";
+import { BsHandbag } from "react-icons/bs";
+import { IoHeartOutline } from "react-icons/io5";
 import { IoSearchOutline } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
   width: 100%;
@@ -138,16 +140,16 @@ export const MobileMenu = styled.div<{ active: boolean }>`
   }
 `;
 
-export const Cart = styled(GiShoppingCart)`
+export const Cart = styled(BsHandbag)`
   cursor: pointer;
-  font-size: 22px;
+  font-size: 20px;
 
   @media only screen and (min-width: 601px) {
-    font-size: 25px;
+    font-size: 23px;
   }
 
   @media only screen and (min-width: 1024px) {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   &:hover {
@@ -172,33 +174,54 @@ export const Search = styled(IoSearchOutline)`
   }
 `;
 
+export const Favorites = styled(IoHeartOutline)`
+  cursor: pointer;
+  font-size: 22px;
+
+  @media only screen and (min-width: 601px) {
+    font-size: 25px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    font-size: 30px;
+  }
+
+  &:hover {
+    color: #495057;
+  }
+`;
+
 export const MenuBrace = styled.div`
   display: flex;
 
-  @media only screen and (min-width: 769px) {
+  @media only screen and (min-width: 1024px) {
     display: none;
   }
 `;
 
-export const BurgerMenuBrace = styled.div`
-  display: flex;
-  margin-left: -35px;
-  margin-bottom: 10px;
+// export const BurgerMenuBrace = styled.div`
+//   display: flex;
+//   margin-left: -35px;
+//   margin-bottom: 10px;
 
-  @media only screen and (min-width: 769px) {
-    display: none;
-  }
-`;
+//   @media only screen and (min-width: 769px) {
+//     display: none;
+//   }
+// `;
 
 export const MenuBraceBigScreen = styled.div`
   display: none;
 
-  @media only screen and (min-width: 769px) {
-    display: flex;
-    width: 350px;
-  }
-
   @media only screen and (min-width: 1024px) {
+    display: flex;
     width: 400px;
   }
+`;
+
+export const ReactLink = styled(Link)`
+  color: #000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
 `;

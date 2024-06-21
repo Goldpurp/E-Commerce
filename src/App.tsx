@@ -8,12 +8,14 @@ import Men from "./Pages/NavTabs/Men";
 import Kids from "./Pages/NavTabs/Kids";
 import Brands from "./Pages/NavTabs/Brands";
 import ProductPage from "./Pages/ProductPage/ProductPage";
+import Login from "./Pages/Login/Login";
+import SignUp from "./Pages/SignUp/SignUp";
 
 
 function App() {
   return (
     <>
-    
+
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/Women" element={<Women />} />
@@ -23,6 +25,9 @@ function App() {
         <Route path="/wishlist" element={<WishlistSection />} />
         <Route path="/cart" element={<CartSection />} />
         <Route path="/product" element={ <ProductPage />} />
+        <Route path="/login" element={ <Login/>} />
+        <Route path="/signUp" element={ <SignUp/>} />
+
       </Routes>
 
     </>
