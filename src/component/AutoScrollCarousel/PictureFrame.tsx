@@ -7,33 +7,33 @@ export type PictureProps ={
     coupleImg: string;
   }
 
-  const _images = [
-    {
-      hashtag: "TheOGs",
-      words:
-        "Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!",
-    },
-    {
-      hashtag: "LetsGoFá",
-      words:
-        "Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!",
-    },
-    {
-      hashtag: "MeetTheLolus",
-      words:
-        "Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!",
-    },
-    {
-      hashtag: "TheIGs",
-      words:
-        "Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!",
-    },
-    {
-      hashtag: "TheOGs",
-      words:
-        "Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!",
-    },
-  ];
+  // const _images = [
+  //   {
+  //     hashtag: "TheOGs",
+  //     words:
+  //       "Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!",
+  //   },
+  //   {
+  //     hashtag: "LetsGoFá",
+  //     words:
+  //       "Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!",
+  //   },
+  //   {
+  //     hashtag: "MeetTheLolus",
+  //     words:
+  //       "Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!",
+  //   },
+  //   {
+  //     hashtag: "TheIGs",
+  //     words:
+  //       "Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!",
+  //   },
+  //   {
+  //     hashtag: "TheOGs",
+  //     words:
+  //       "Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!Thank you for your support. We appreciate your help and look forward to future collaborations. Stay well!",
+  //   },
+  // ];
 
 export default function Picture({ coupleImg, hashtag, words }: PictureProps){
     return (
