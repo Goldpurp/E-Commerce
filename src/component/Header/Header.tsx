@@ -14,7 +14,6 @@ import {
   LoginFrame,
   MobileMenu,
   MainContainer,
-  // BurgerMenuBrace,
   MenuBraceBigScreen,
   MobileHeaderNavContainer,
 } from "./Header.styled";
@@ -23,8 +22,15 @@ import ImgIcon from "../../../public/Images/profile.jpeg";
 import Menu from "../Menu/Menu";
 import SidebarMenu from "../SidebarMenu/SidebarMenu";
 import LoginDrawer from "../LoginDrawer/LoginDrawer";
+import { useNavigate } from "react-router-dom";
+import { Routes } from "../../routes/baseRoutes";
 
 export default function Header() {
+  const navigate = useNavigate();
+
+  const handleRoute = (path: string) => {
+    navigate(path);
+  };
 
   const [IsOpen, SetIsOpen] = useState<boolean>(false);
 
@@ -38,7 +44,6 @@ export default function Header() {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
-
   return (
     <MainContainer>
       <Container>
@@ -46,10 +51,7 @@ export default function Header() {
           <Hamburger onClick={toggleMenu}>
             {IsOpen ? <MenuClose /> : <MenuOpen />}
           </Hamburger>
-          <ReactLink to={"/"}>
-
-            <LogoIcon src="/icon/logoIcon.svg" alt="logo" />
-          </ReactLink>
+          <LogoIcon src="/icon/logoIcon.svg" alt="logo" onClick={() => handleRoute(Routes.home)} />
         </NavLogo>
 
         <MenuBraceBigScreen>
@@ -57,18 +59,14 @@ export default function Header() {
         </MenuBraceBigScreen>
 
         <LoginFrame>
-
           <Search />
-          <ReactLink to={"wishlist"}>
+          <ReactLink to={Routes.wishlist}>
             <Favorites />
           </ReactLink>
-
-          <ReactLink to={"cart"}>
+          <ReactLink to={Routes.cart}>
             <Cart />
           </ReactLink>
-
-          <Icon src={ImgIcon} alt="Icon" onClick={toggleDrawer}/>
-         
+          <Icon src={ImgIcon} alt="Icon" onClick={toggleDrawer} />
         </LoginFrame>
 
         <MobileMenu active={IsOpen}>
@@ -77,27 +75,17 @@ export default function Header() {
               <Hamburger onClick={toggleMenu}>
                 {IsOpen ? <MenuClose /> : <MenuOpen />}
               </Hamburger>
-
-              <ReactLink to={"/"}>
-
+              <ReactLink to={Routes.home}>
                 <LogoIcon src="/icon/logoIcon.svg" alt="logo" />
               </ReactLink>
             </NavLogo>
 
             <LoginFrame>
               <Search />
-              <ReactLink to={"wishlist"}>
-                <Favorites />
-              </ReactLink>
-              <ReactLink to={"cart"}>
-                <Cart />
-              </ReactLink>
+              <Favorites onClick={() => handleRoute(Routes.wishlist)} />
+              <Cart onClick={() => handleRoute(Routes.cart)} />
             </LoginFrame>
           </MobileHeaderNavContainer>
-          {/* <BurgerMenuBrace>
-            <Menu />
-          </BurgerMenuBrace> */}
-
           <SidebarMenu />
         </MobileMenu>
       </Container>
@@ -105,8 +93,8 @@ export default function Header() {
       <MenuBrace>
         <Menu />
       </MenuBrace>
-  
-      <LoginDrawer isOpen={isDrawerOpen} onClose={toggleDrawer}/>
+
+      <LoginDrawer isOpen={isDrawerOpen} onClose={toggleDrawer} />
     </MainContainer>
   );
 }

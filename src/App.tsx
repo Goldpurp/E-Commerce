@@ -27,8 +27,8 @@ function App() {
         <Route path="/product" element={ <ProductPage />} />
         <Route path="/login" element={ <Login/>} />
         <Route path="/signUp" element={ <SignUp/>} />
-
       </Routes>
+
 
     </>
   );

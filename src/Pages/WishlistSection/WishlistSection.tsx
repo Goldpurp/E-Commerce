@@ -1,4 +1,4 @@
-import NewArrivalsCarousel from "../NewArrivalsCards/NewArrivalsCards";
+import Wishes from "../../component/AutoScrollCarousel/Wishes";
 import { Container, Box, HeaderText, Message, RedirectionsTexts } from "./WishlistSection.styled"
 
 export default function WishlistSection() {
@@ -8,9 +8,8 @@ export default function WishlistSection() {
 
             <Box>
                 <Message>Your wishlist is empty</Message>
-                <RedirectionsTexts>Discover our newest arrivals to find your perfect style</RedirectionsTexts>
-
-                <NewArrivalsCarousel />
+                <RedirectionsTexts>START WITH ONE OF THESE TOP SELLERS!</RedirectionsTexts>
+                <Wishes/>
             </Box>
 
         </Container>

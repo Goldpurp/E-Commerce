@@ -27,18 +27,20 @@ export const HeaderText = styled.h1`
   }
 `
 export const Message = styled.h3`
- font-size: 23px;
+ font-size: 18px;
+ font-weight: 300;
 `
 
 export const RedirectionsTexts = styled.p`
 text-align: center;
- max-width: 280px;
- margin-bottom: 30px;
+ margin-bottom: 20px;
+ font-weight: 900;
+ max-width: 300px;
 `
 
 export const Buttons = styled.button`
   color: black;
-  margin: 10px 0 0 0;
+  margin: 10px 0;
   cursor: pointer;
   font-size: 12px;
   font-weight: 500;

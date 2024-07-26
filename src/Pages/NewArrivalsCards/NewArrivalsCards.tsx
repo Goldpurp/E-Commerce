@@ -1,4 +1,5 @@
 import Img6 from "../../../public/NewArrivals/6.png";
+import DecorativeText from "../../component/DecorativeText/DecorativeText";
 
 import {
   Row,
@@ -93,6 +94,8 @@ export default function NewArrivalsCarousel() {
   ];
 
   return (
+    <>
+      <DecorativeText/>
     <CarouselContainer>
       <Row>
         {newArrivalItems.map((item, itemIndex) => (
@@ -115,5 +118,6 @@ export default function NewArrivalsCarousel() {
         ))}
       </Row>
     </CarouselContainer>
+        </>
   );
 }

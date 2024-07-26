@@ -109,7 +109,7 @@ export const Form = styled.form`
 export const Agreement = styled.p`
   font-size: 10px;
   margin-top: 60px;
-  /* max-width: 200px; */
+  max-width: 300px;
   text-align: center;
 `;
 

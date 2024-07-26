@@ -199,16 +199,6 @@ export const MenuBrace = styled.div`
   }
 `;
 
-// export const BurgerMenuBrace = styled.div`
-//   display: flex;
-//   margin-left: -35px;
-//   margin-bottom: 10px;
-
-//   @media only screen and (min-width: 769px) {
-//     display: none;
-//   }
-// `;
-
 export const MenuBraceBigScreen = styled.div`
   display: none;
 

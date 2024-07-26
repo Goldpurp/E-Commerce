@@ -24,16 +24,19 @@ export const HeaderText = styled.h1`
   @media screen and (min-width: 600px) {
   margin-left: 10%;
   margin-top: 1%;
+  
   }
 `
 export const Message = styled.h3`
- font-size: 23px;
+ font-size: 18px;
+ font-weight: 300;
+
 `
 
 export const RedirectionsTexts = styled.p`
 text-align: center;
- max-width: 300px;
  margin-bottom: 70px;
+ font-weight: 900;
 `
 
 export const ButtonContainer = styled.div`
