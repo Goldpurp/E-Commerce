@@ -8,6 +8,7 @@ import SignUp from "../Pages/SignUp/SignUp";
 import WishlistSection from "../Pages/WishlistSection/WishlistSection";
 import HelpCenter from "../Pages/HelpCenter/HelpCenter";
 import ContactUs from "../Pages/ContactUs/ContactUs";
+// import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
     { path: Routes.login,
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
     {
         path: Routes.home,
         element: <Home/>,
+        // errorElement: <ErrorPage />,    
         children: [
             {
                 index: true,
@@ -37,6 +39,9 @@ const router = createBrowserRouter([
             { path: Routes.contactUs,
                 element: <ContactUs/>
             },
+            // { path: Routes.notFound,
+            //     element: <ErrorPage/>
+            // },
         
         ]
     },
