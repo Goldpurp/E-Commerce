@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Img6 from "../../../public/NewArrivals/6.png";
 import DecorativeText from "../../component/DecorativeText/DecorativeText";
 
@@ -9,7 +10,8 @@ import {
   Title,
   Content,
   CartItem,
-  LikeItem,
+  LikeItemFalse,
+  LikeItemTrue,
   ReactLink,
   ImageBrace,
   Description,
@@ -93,31 +95,41 @@ export default function NewArrivalsCarousel() {
     },
   ];
 
+  const [like, setLike] = useState(false);
+
+  const toggleLike = () => {
+    setLike(!like);
+  };
+
   return (
     <>
-      <DecorativeText/>
-    <CarouselContainer>
-      <Row>
-        {newArrivalItems.map((item, itemIndex) => (
-          <Card key={itemIndex}>
-            <ImageBrace>
-            <ReactLink to={"product"}>
-              <Image src={item.src} alt="image" />
-              </ReactLink>
-            </ImageBrace>
-            <Content>
-              <Title>{item.title}</Title>
-              <Description>{item.description}</Description>
-              <Price>₦{item.price}</Price>
-              <ReactionsContainer>
-                <LikeItem />
-                <CartItem />
-              </ReactionsContainer>
-            </Content>
-          </Card>
-        ))}
-      </Row>
-    </CarouselContainer>
-        </>
+      <DecorativeText />
+      <CarouselContainer>
+        <Row>
+          {newArrivalItems.map((item, itemIndex) => (
+            <Card key={itemIndex}>
+              <ImageBrace>
+                <ReactLink to={"product"}>
+                  <Image src={item.src} alt="image" />
+                </ReactLink>
+              </ImageBrace>
+              <Content>
+                <Title>{item.title}</Title>
+                <Description>{item.description}</Description>
+                <Price>₦{item.price}</Price>
+                <ReactionsContainer>
+                  {like ? (
+                    <LikeItemTrue onClick={toggleLike} />
+                  ) : (
+                    <LikeItemFalse onClick={toggleLike} />
+                  )}
+                  <CartItem />
+                </ReactionsContainer>
+              </Content>
+            </Card>
+          ))}
+        </Row>
+      </CarouselContainer>
+    </>
   );
 }

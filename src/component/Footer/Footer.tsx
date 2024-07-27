@@ -125,7 +125,6 @@ export default function Footer() {
           <SectionContent isOpen={isOpen.legal}>
             <Link href="#">Privacy Policy</Link>
             <Link href="#">Terms of Service</Link>
-            <Link href="#">Cookie Policy</Link>
             <Link href="#">Return and refund policy</Link>
           </SectionContent>
         </Section>

@@ -1,6 +1,6 @@
 // import ProductGridList from "../ProductGridList/ProductGridList"
-import Wishes from "../../component/AutoScrollCarousel/Wishes"
-import { Container, Box, HeaderText, Message, RedirectionsTexts, Buttons} from "./CartSection.styled"
+import Wishes from "../../component/WishesAutoScrollCarousel/Wishes"
+import { Container, Box, HeaderText, Message, RedirectionsTexts, Buttons } from "./CartSection.styled"
 export default function CartSection() {
     return (
         <Container>
@@ -12,10 +12,10 @@ export default function CartSection() {
 
                 <Buttons>Best Sellers</Buttons>
                 <Buttons>Login Account</Buttons>
-                <Wishes/>
+                <Wishes />
 
 
-              
+
             </Box>
         </Container>
     )

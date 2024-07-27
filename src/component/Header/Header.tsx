@@ -24,6 +24,7 @@ import SidebarMenu from "../SidebarMenu/SidebarMenu";
 import LoginDrawer from "../LoginDrawer/LoginDrawer";
 import { useNavigate } from "react-router-dom";
 import { Routes } from "../../routes/baseRoutes";
+import SearchModal from "../Search/Search";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -44,6 +45,8 @@ export default function Header() {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <MainContainer>
       <Container>
@@ -59,7 +62,7 @@ export default function Header() {
         </MenuBraceBigScreen>
 
         <LoginFrame>
-          <Search />
+          <Search onClick={() => setIsModalOpen(true)}/>
           <ReactLink to={Routes.wishlist}>
             <Favorites />
           </ReactLink>
@@ -81,7 +84,6 @@ export default function Header() {
             </NavLogo>
 
             <LoginFrame>
-              <Search />
               <Favorites onClick={() => handleRoute(Routes.wishlist)} />
               <Cart onClick={() => handleRoute(Routes.cart)} />
             </LoginFrame>
@@ -95,6 +97,8 @@ export default function Header() {
       </MenuBrace>
 
       <LoginDrawer isOpen={isDrawerOpen} onClose={toggleDrawer} />
+
+      <SearchModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}/>
     </MainContainer>
   );
 }

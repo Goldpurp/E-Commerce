@@ -6,9 +6,11 @@ import {
   PictureImage,
   HashtagText,
   WordsText,
+  MarqueeGradientFilter,
 } from "./Wishes.style";
-import Img1 from "../../../public/Products/2.png";
-const Wishes = () => {
+
+import Img1 from "../../../public/Products/3.png";
+export default function Wishes(){
   const _images = [
     {
       src: Img1,
@@ -36,7 +38,7 @@ const Wishes = () => {
     },
   ];
 
-  const images = [..._images, ..._images]; // Duplicate for scrolling effect
+  const images = [..._images, ..._images];
 
   return (
     <Container>
@@ -62,6 +64,8 @@ const Wishes = () => {
                     : e.words}
                 </WordsText>
               </div>
+          <MarqueeGradientFilter>
+          </MarqueeGradientFilter>
             </PictureWrapper>
           ))}
         </MarqueeContent>
@@ -70,4 +74,3 @@ const Wishes = () => {
   );
 };
 
-export default Wishes;

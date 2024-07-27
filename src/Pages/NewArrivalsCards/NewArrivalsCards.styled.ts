@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { GiShoppingCart } from "react-icons/gi";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
+import { MdOutlineFavorite } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 export const CarouselContainer = styled.div`
@@ -143,7 +144,27 @@ export const Price = styled.div`
   }
 `;
 
-export const LikeItem = styled(MdOutlineFavoriteBorder)`
+export const LikeItemFalse = styled(MdOutlineFavoriteBorder)`
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: 900ms;
+
+  &:hover {
+    color: #40434e;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 24px;
+    height: 24px;
+  }
+`;
+export const LikeItemTrue = styled(MdOutlineFavorite)`
   width: 20px;
   height: 20px;
   cursor: pointer;

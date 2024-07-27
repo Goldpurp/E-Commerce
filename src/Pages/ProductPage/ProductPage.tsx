@@ -27,7 +27,7 @@ import Img4 from "../../../public/ModalImgCards/4.webp";
 import { useState } from "react";
 import DrawerProductPage from "../../component/DrawerProductPage/DrawerProductPage";
 
-const ProductPage = () => {
+export default function ProductPage(){
   const [value, setValue] = useState(1);
   
   const handleIncrement = () => {
@@ -43,7 +43,6 @@ const ProductPage = () => {
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
-
 
   return (
     <Container>
@@ -99,4 +98,3 @@ const ProductPage = () => {
   );
 };
 
-export default ProductPage;

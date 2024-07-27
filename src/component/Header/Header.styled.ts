@@ -105,13 +105,13 @@ export const LogoIcon = styled.img`
 `;
 
 export const LoginFrame = styled.div`
-  gap: 10px;
+  gap: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   @media only screen and (min-width: 1024px) {
-    gap: 10px;
+    gap: 15px;
   }
 `;
 
@@ -176,7 +176,7 @@ export const Search = styled(IoSearchOutline)`
 
 export const Favorites = styled(IoHeartOutline)`
   cursor: pointer;
-  font-size: 22px;
+  font-size: 23px;
 
   @media only screen and (min-width: 601px) {
     font-size: 25px;

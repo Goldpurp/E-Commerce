@@ -1,10 +1,16 @@
 export enum Routes {
+  home = "/",
   login = "/login",
   signUp = "/sign-up",
-  home = "/",
   cart = "cart",
   wishlist = "wishlist",
   helpCenter = "help-center",
   contactUs = "contact-us",
-//   notFound = "error",
+  trackOrder = "track-order",
+  aboutUs = "about-us",
+  privacyPolicy = "privacy-policy",
+  termsOfService = "terms-of-service",
+  returnPolicy = "return-policy",
+  faq = "faq",
+  // search = "search",
 }
